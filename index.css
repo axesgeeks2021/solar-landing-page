@@ -682,7 +682,7 @@ header .website__logo img {
     --nf-slider-thumb-border-color:#fff;
     --nf-slider-thumb-background:var(--nf-input-focus-border-color);
     display: block;
-    margin-top: calc(var(--nf-input-size)*1.5);
+    margin-top: calc(var(--nf-input-size)*0.5);
     line-height: 1;
     white-space: nowrap;
     --switch-orb-size:var(--nf-input-size);
@@ -744,7 +744,7 @@ header .website__logo img {
     color: var(--nf-input-color);
     width: 100%;
     padding: calc(var(--nf-input-size)*0.75);
-    height: calc(var(--nf-input-size)*2.75);
+    height: calc(var(--nf-input-size)*2.20);
     line-height: normal;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -753,7 +753,9 @@ header .website__logo img {
     --icon-padding:calc(var(--nf-input-size)*2.25);
     --icon-background-offset:calc(var(--nf-input-size)*0.75);
   }
-  
+  .nice-form-group .select{
+    height: calc(var(--nf-input-size)*2.75);
+  }
   .nice-form-group > input[type=checkbox]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=date]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=email]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=month]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=number]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=password]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=radio]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=search]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=tel]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=text]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=time]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=url]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > input[type=week]:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > select:required:not(:-moz-placeholder-shown):invalid, .nice-form-group > textarea:required:not(:-moz-placeholder-shown):invalid {
     background-color: var(--nf-invalid-input-background-color);
     border-bottom-color: var(--nf-valid-input-border-color);
@@ -1354,7 +1356,7 @@ header .website__logo img {
     padding: 0.5em 1em;
     border-radius: 5px;
     font-size: 0.875rem;
-    background: #10b981;
+    background: var(--orange);
     top: 1em;
     right: 1em;
     color: #fff;
@@ -1367,7 +1369,7 @@ header .website__logo img {
   }
   
   details .toggle-code:hover {
-    background: #0ea271;
+    background: var(--orange);
   }
   
   details .toggle-code svg {
@@ -1403,6 +1405,29 @@ header .website__logo img {
     transform: translate(-50%, -50%);
     z-index: 1000;
     display: none;
+  }
+.msg_box {
+    position: fixed;
+    top: 5%;
+    right: 1%;
+    /* transform: translate(-50%, -50%); */
+    z-index: 100;
+    background-color: var(--orange);
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 10;
+    width: auto;
+    overflow: hidden;
+    display: none;
+  }
+  .msg_box p{
+    font-size: 28px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
   }
   
   @keyframes spin {
