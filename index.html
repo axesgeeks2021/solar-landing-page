@@ -1,142 +1,863 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="./index.js" defer></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <meta name="robots" content="noindex, nofollow">
     <title>Solar 365</title>
+    <meta name="description" content="Solar 365">
+    <link href="https://www.cinntra.com/assets/img/favicon.webp" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" media="all">
+    <link rel="stylesheet" href="https://www.cinntra.com/add/SAP/style1.css">
+    <script type="text/javascript" async=""
+        src="https://cdn.mouseflow.com/projects/c71f614c-a50a-44bf-abbe-2adb9734c574.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5CN3KQ4"></script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5CN3KQ4');</script>
+
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10808531864"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-10808531864');
+    </script>
+    <style>
+        .NetSuiteImplementationThree {
+            background-image: url(https://www.cinntra.com/add/SAP/images/hero1-bg.webp);
+            background-size: cover;
+            background-position: bottom;
+            padding: 50px 0;
+            background-repeat: no-repeat;
+
+        }
+
+        .NetSuiteImplementationNine {
+            padding: 50px 0;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .contact-popup-widgetCinntra {
+            position: fixed;
+            right: 20px;
+            bottom: 15px;
+            z-index: 9998;
+            text-decoration: none !important;
+            font-size: 16px;
+            line-height: 1.2em;
+        }
+
+        .contact-popup-widgetCinntra .contact-popup {
+            display: table-cell;
+            width: auto;
+            height: 45px;
+            padding: 0 30px;
+            border-radius: 25px;
+            box-shadow: rgb(0 0 0 / 25%) 0 2px 5px;
+            font-family: sans-serif;
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 14px;
+            color: #fff !important;
+            cursor: pointer;
+            background: #0982D1;
+            color: rgb(0, 0, 0);
+        }
+
+        .MainYoutubeFrame video {
+            width: 490px;
+            height: 300px;
+        }
+
+        .dot {
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        .dot::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 50%;
+            top: 40%;
+            left: -8%;
+        }
+
+        /* All Media Query Here */
+
+        @media only screen and (max-width: 767.99px) {
+            .NetSuiteImplementationUSA .MainContent h1 {
+                font-size: 30px;
+                padding-top: 0px;
+            }
+
+            .MainYoutubeFrame video {
+                width: 360px;
+                height: 300px;
+            }
+        }
+
+        .Cinntra-Clients-achieved .slick-slide img {
+            aspect-ratio: 1 / 1;
+            object-fit: contain;
+            border: 1px solid #000;
+            background-color: #ccc;
+            margin: 10px 10px;
+            mix-blend-mode: color-burn;
+        }
+
+        .blog-card {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto;
+            box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.6%;
+            background: #fff;
+            line-height: 1.4;
+            font-family: sans-serif;
+            border-radius: 5px;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .blog-card a {
+            color: inherit;
+        }
+
+        .blog-card a:hover {
+            color: #5ad67d;
+        }
+
+        .blog-card:hover .photo {
+            transform: scale(1.3) rotate(3deg);
+        }
+
+        .blog-card .meta {
+            position: relative;
+            z-index: 0;
+            height: 200px;
+        }
+
+        .blog-card .photo {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.2s;
+        }
+
+        .blog-card .details,
+        .blog-card .details ul {
+            margin: auto;
+            padding: 0;
+            list-style: none;
+        }
+
+        .blog-card .details {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -100%;
+            margin: auto;
+            transition: left 0.2s;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 10px;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        .blog-card .details a {
+            -webkit-text-decoration: dotted underline;
+            text-decoration: dotted underline;
+        }
+
+        .blog-card .details ul li {
+            display: inline-block;
+        }
+
+        .blog-card .details .author:before {
+            font-family: FontAwesome;
+            margin-right: 10px;
+            content: "";
+        }
+
+        .blog-card .details .date:before {
+            font-family: FontAwesome;
+            margin-right: 10px;
+            content: "";
+        }
+
+        .blog-card .details .tags ul:before {
+            font-family: FontAwesome;
+            content: "";
+            margin-right: 10px;
+        }
+
+        .blog-card .details .tags li {
+            margin-right: 2px;
+        }
+
+        .blog-card .details .tags li:first-child {
+            margin-left: -4px;
+        }
+
+        .blog-card .description {
+            padding: 1rem;
+            background: #fff;
+            position: relative;
+            z-index: 1;
+        }
+
+        .blog-card .description h1,
+        .blog-card .description h2 {
+            font-family: Poppins, sans-serif;
+        }
+
+        .blog-card .description h1 {
+            line-height: 1;
+            margin: 0;
+            font-size: 1.7rem;
+        }
+
+        .blog-card .description h2 {
+            font-size: 1rem;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: #a2a2a2;
+            margin-top: 5px;
+        }
+
+        .blog-card .description .read-more {
+            text-align: right;
+        }
+
+        .blog-card .description .read-more a {
+            color: #5ad67d;
+            display: inline-block;
+            position: relative;
+        }
+
+        .blog-card .description .read-more a:after {
+            content: "";
+            font-family: FontAwesome;
+            margin-left: -10px;
+            opacity: 0;
+            vertical-align: middle;
+            transition: margin 0.3s, opacity 0.3s;
+        }
+
+        .blog-card .description .read-more a:hover:after {
+            margin-left: 5px;
+            opacity: 1;
+        }
+
+        .blog-card p {
+            position: relative;
+            margin: 1rem 0 0;
+        }
+
+        .blog-card p:first-of-type {
+            margin-top: 1.25rem;
+        }
+
+        .blog-card p:first-of-type:before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            background: #f76a0e;
+            width: 35px;
+            top: -0.75rem;
+            border-radius: 3px;
+        }
+
+        .blog-card:hover .details {
+            left: 0%;
+        }
+
+        @media (min-width: 640px) {
+            .blog-card {
+                flex-direction: row;
+                max-width: 90%;
+            }
+
+            .blog-card .meta {
+                flex-basis: 40%;
+                height: auto;
+            }
+
+            .blog-card .description {
+                flex-basis: 60%;
+            }
+
+            .blog-card .description:before {
+                transform: skewX(-3deg);
+                content: "";
+                background: #fff;
+                width: 30px;
+                position: absolute;
+                left: -10px;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            .blog-card.alt {
+                flex-direction: row-reverse;
+            }
+
+            .blog-card.alt .description:before {
+                left: inherit;
+                right: -10px;
+                transform: skew(3deg);
+            }
+
+            .blog-card.alt .details {
+                padding-left: 25px;
+            }
+        }
+
+        .brands__container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+            margin: 6px 0;
+        }
+
+        .brands__container:not(:last-child) {
+            border-bottom: 4px solid #eee;
+        }
+
+        .brand_image_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 4px 0;
+
+        }
+
+        @media(max-width: 575px) {
+            .brands__container {
+                gap: 20px;
+            }
+
+            .brand_image {
+                width: 45%;
+            }
+        }
+    </style>
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10808531864/?random=1705466723925&amp;cv=11&amp;fst=1705466723925&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be41a0v9171552252&amp;gcd=11l1l1l1l1&amp;dma=0&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fwww.cinntra.com%2Fsap-business-one-software&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=SAP%20Business%20One%20ERP%20Solution%20%7C%20Best%20ERP%20Software%20for%20SMEs%20%7C%20Cinntra&amp;auid=1835340865.1705296396&amp;fledge=1&amp;uaa=x86&amp;uab=64&amp;uafvl=Not_A%2520Brand%3B8.0.0.0%7CChromium%3B120.0.6099.217%7CGoogle%2520Chrome%3B120.0.6099.217&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/661581239/?random=1705466723979&amp;cv=11&amp;fst=1705466723979&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be41a0v9171552252&amp;gcd=11l1l1l1l1&amp;dma=0&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fwww.cinntra.com%2Fsap-business-one-software&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=SAP%20Business%20One%20ERP%20Solution%20%7C%20Best%20ERP%20Software%20for%20SMEs%20%7C%20Cinntra&amp;auid=1835340865.1705296396&amp;fledge=1&amp;uaa=x86&amp;uab=64&amp;uafvl=Not_A%2520Brand%3B8.0.0.0%7CChromium%3B120.0.6099.217%7CGoogle%2520Chrome%3B120.0.6099.217&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="">
-        <div class="website__logo">
-            <img src="./assets/logo.webp" class="img-fluid" alt="solar 365 logo" />
-        </div>
-    </header>
-    <!-- Hero section -->
-    <div class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0">
-        <div
-            class="inset-y-0 top-0 right-0 z-0 w-full max-w-xl px-4 mx-auto md:px-0 lg:pr-0 lg:mb-0 lg:mx-0 lg:w-7/12 lg:max-w-full lg:absolute xl:px-0">
-            <svg style="color: #f76a0e;"
-                class="absolute left-0 hidden h-full text-white transform -translate-x-1/2 lg:block"
-                viewBox="0 0 100 100" fill="currentColor" preserveAspectRatio="none slice">
-                <path d="M50 0H100L50 100H0L50 0Z"></path>
-            </svg>
-            <img class="object-cover w-full h-56 rounded shadow-md lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
-                src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="" />
-        </div>
-        <div class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
-            <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-                <p class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white py-1 uppercase rounded"
-                    style="background-color: #f76a0e;">
-                    Premier Solar Solutions Provider
-                </p>
-                <h1 class="mb-5 font-sans text-3xl font-bold text-gray-900 sm:text-3xl sm:leading-none">
-                    <span class="inline-block" style="color: #f76a0e;">5000+</span>
-                    Homes in Australia Use 6.6KW Solar System, What About You?
-                    <br class="hidden md:block" />
-                </h1>
+    <section class="NetSuiteImplementationUSA" id="NetSuiteImplementationUSA">
+        <div class="container">
+            <div class="LogoHere">
+                <div class="cinntra">
+                    <img src="./assets/logo.webp" alt="solar website logo">
+                </div>
+                <!-- <div class="cinntra">
+                    <img src="https://www.cinntra.com/add/SAP/images/sapb1.png" alt="cinntra">
+                </div>
+                <div class="netsuite">
+                    <img src="https://www.cinntra.com/add/SAP/images/sap-silver-1.png" alt="cinntra">
+                </div> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="MainContent">
+                        <p>Premier Solar Solutions Provider</p>
+                        <h1><span style="color: #f76a0e">5000+</span> Homes in Australia Use
+                            6.6KW Solar System, What About You?
+                        </h1>
+                    </div>
+                    <div class="bannerImgHere">
+                        <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="SAP Business One Solution cinntra">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5" id="demo">
+                    <div class="sign-up-form-wrap position-relative z-index shadow-lg rounded gray-light-bg">
+                        <div class="sign-up-form-header text-center mb-2">
+                            <h4 class="RFD">Enquiry Form</h4>
+                            <!-- <p>Connect With Us For Personalized Business Solution</p> -->
+                        </div>
+                        <div class="message-box d-none">
+                            <div class="alert alert-danger"></div>
+                        </div>
+                        <form id="getQuoteFrm" class="login-signup-form ign-up-form" onsubmit="fetchEnquireForm()">
+                            <div class="form-group">
+                                <div class="input-group input-group-merge">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name" id="name"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group input-group-merge">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email" id="email"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group input-group-merge">
+                                    <input type="text" name="number" class="form-control" placeholder="Your Number" id="number"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group input-group-merge">
+                                    <input type="text" name="address" class="form-control" placeholder="Address" id="address"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-group input-group-merge">
+                                    <input type="text" name="zipcode" class="form-control" placeholder="Zipcode" id="zipcode"
+                                        required="">
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-12 pt-3">
+                                    <div class="form-group country">
+                                        <select name="type-of-usage" id="type-of-usage" required
+                                            style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
+                                            <option value="">Type of usage</option>
+                                            <option value="residentials">Residentials</option>
+                                            <option value="commercial">Commercial</option>
+                                        </select>
+                                    </div>
+                                </div>
 
-                <div class="flex items-center">
-                    <button style="background-color: #f76a0e;"
-                        class="display-button inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
-                        Book a Discovery Call
-                    </button>
+                            </div>
+                            <div class="row ">
+                                <div class="col-lg-12 pt-3">
+                                    <div class="form-group country">
+                                        <select name="product" id="product" required
+                                            style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
+                                            <option value="">Product</option>
+                                            <option value="solar + inverter">Solar + Inverter</option>
+                                            <option value="battery">Battery</option>
+                                            <option value="solar + inverter + battery">Solar + Inverter + Battery
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- <div class="form-group">
+                                <div class="input-group input-group-merge">
+                                    <textarea name="message" id="msg" class="form-control"
+                                        placeholder="Write your message" cols="30" rows="4" required=""></textarea>
+                                </div>
+                            </div> -->
+
+                            <div class="form-group">
+                                <input type="submit"  name="sub" id="submit" class="btn solid-btn btn-block"
+                                    value="Send your query" style="background-color: #f76a0e;">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- strong footprints in -->
-    <section class="strong__container">
-        <h2>Strong Footprints In</h2>
-        <div class="countries">
-            <p>Perth</p>
-            <p>Busselton</p>
-            <p>Brisbane</p>
-            <p>Adelaide</p>
-        </div>
-        <button style="background-color: #f76a0e;"
-            class="display-buttons inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
-            Book a Discovery Call
-        </button>
     </section>
-    <!-- powerfull benefits -->
-    <section class="benefits">
-        <div class="benefits__photo">
-            <img src="https://plus.unsplash.com/premium_photo-1677942035529-db39d2a25915?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="img-fluid" />
-        </div>
-        <div class="benefits__content">
-            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500;">Powerful Benefits of 6.6kW
-                Solar Systems</p>
-            <ul>
-                <li><span style="font-weight: 600;">Savings Boost:</span> You can save more on your electricity bills
-                    with our larger 6.6kW systems, making
-                    the most of government rebates.</li>
-                <li><span style="font-weight: 600;">Ready for Tomorrow:</span> Get set for the future by easily adding
-                    batteries to your system, ensuring
-                    continuous energy even during outages.
-                </li>
-                <li><span style="font-weight: 600;">Flexible Inverter Options:</span> Choose from various high-quality,
-                    affordable inverters that perfectly
-                    fit your 6.6kW setup, ensuring optimal performance and efficiency.
-                </li>
-                <li><span style="font-weight: 600;">Ample Energy Production:</span> Enjoy increased power generation
-                    with 6.6kW systems, catering to larger
-                    energy needs and reducing reliance on the grid.
-                </li>
-                <li><span style="font-weight: 600;">Space-Efficient Design:</span> Optimize rooftop space with fewer
-                    panels while maximizing energy output,
-                    ensuring a sleek and efficient installation for your home.
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Trust points -->
-    <section class="trust__section">
-        <p style="font-size: 2rem;color: #fff;font-weight: 500;">Can You Trust Us?</p>
-        <p style="margin-bottom: 1rem;color: #fff;" class="px-3">At Solar 365, our commitment to your satisfaction extends beyond
-            promises—we deliver excellence at every step.</p>
-        <div>
-            <ul style="padding: 15px 15px">
-                <li><span style="font-weight: 600;">Transparent Service:</span> As the most trusted solar retailer,
-                    transparency is our hallmark. From initial consultations to project completion, expect clear
-                    communication and on-time customer support.</li>
-                <li><span style="font-weight: 600;">Licensed Expertise:</span> Our licensed electricians ensure flawless
-                    installations and grid connections. With Solar 365, there's no need for return visits—we get it
-                    right the first time, backed by our extensive 25-year panel warranty.</li>
-                <li><span style="font-weight: 600;">Industry Accolades:</span> Accredited by industry standards and
-                    proud members of the Clean Energy Council, Solar 365 stands as a beacon of quality and reliability.
-                    We follow stringent guidelines, ensuring best practices in every installation.</li>
-            </ul>
+    <!-- strong footprints -->
+    <section class="industries" id="industries">
+        <div class="container">
+            <div class="industries_title text-center">
+                <h2 style="color: #f76a0e;">Strong Footprints In</h2>
+                <br>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="industries_box">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/manufacturing.svg"
+                            alt="Manufacturing">
+                        <li>Perth</li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="industries_box">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/pharma.svg"
+                            alt="Pharmaceutical">
+                        <li>Busselton</li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="industries_box">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/construction.svg"
+                            alt="Construction">
+                        <li>Brisbane </li>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="industries_box">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/food.svg"
+                            alt="F &amp; B">
+                        <li>Adelaide</li>
+                    </div>
+                </div>
+
+
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                data-whatever="Schedule a Call"
+                    style="padding: 9px 21px;background-color: #f76a0e;color: #fff; border-radius: 4px;font-weight: 500;margin-top: 20px;text-decoration: none;border: none; display: inline-block;"
+                    class="BtnSchedule">Book a Discovery Call</a>
+            </div>
+
         </div>
     </section>
-    <!-- brands we install -->
-    <div class="marquee">
-        <p style="font-size: 2rem;color: #f76a0e;font-weight: 500;text-align: center;">Brands We Install</p>
-        <ul class="marquee-content">
-            <li><img src="./assets/alpha.webp" alt="brand logo" class="img-fluid" /></li>
-            <li><img src="./assets/froniuss.webp" alt="brand logo" class="img-fluid" /></li>
-            <li><img src="./assets/goodwe.webp" alt="brand logo" class="img-fluid" /></li>
-            <li><img src="./assets/huawei.webp" alt="brand logo" class="img-fluid" /></li>
-            <li><img src="./assets/jinko.webp" alt="brand logo" class="img-fluid" /></li>
-            <li><img src="./assets/sma.webp" alt="brand logo" class="img-fluid" /></li>
-            <li><img src="./assets/solis.webp" alt="brand logo" class="img-fluid" /></li>
-        </ul>
-    </div>
-    <!-- Timeline -->
-    <div class="bottom__line"></div>
+    <!-- Benefits -->
+    <section class="SwiperSliderHere">
+        <div class="container">
+            <div class="MainTItle">
+                <h4 style="color: #f76a0e;">Powerful Benefits of 6.6kW Solar Systems</h4>
+            </div>
+            <div class="swiper CinntraServices swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-5881e5e1ba7b3133" aria-live="polite">
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
+                        style="width: 1116px; margin-right: 30px;">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="mainBox">
+                                    <div class="MainImg">
+                                        <img src="https://www.cinntra.com/add/SAP/images/License.jpg" alt="License">
+                                    </div>
+                                    <div class="Content">
+                                        <h5 style="color: #f76a0e;">Savings Boost</h5>
+                                        <p>You can save more on your electricity bills with our larger 6.6kW systems,
+                                            making the most of government rebates.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mainBox">
+                                    <div class="MainImg">
+                                        <img src="https://www.cinntra.com/add/SAP/images/Consulting.jpg"
+                                            alt="Consulting">
+                                    </div>
+                                    <div class="Content">
+                                        <h5 style="color: #f76a0e;">Ready for Tomorrow</h5>
+                                        <p>Get set for the future by easily adding batteries to your system, ensuring
+                                            continuous energy even during outages.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mainBox">
+                                    <div class="MainImg">
+                                        <img src="https://www.cinntra.com/add/SAP/images/Implementation.jpg"
+                                            alt="Implementation">
+                                    </div>
+                                    <div class="Content">
+                                        <h5 style="color: #f76a0e;">Flexible Inverter Options</h5>
+                                        <p>Choose from various high-quality, affordable inverters that perfectly fit
+                                            your 6.6kW setup, ensuring optimal performance and efficiency.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mainBox">
+                                    <div class="MainImg">
+                                        <img src="https://www.cinntra.com/add/SAP/images/Customization.jpg"
+                                            alt="Customization">
+                                    </div>
+                                    <div class="Content">
+                                        <h5 style="color: #f76a0e;">Ample Energy Production</h5>
+                                        <p>Enjoy increased power generation with 6.6kW systems, catering to larger
+                                            energy needs and reducing reliance on the grid.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
+                        style="width: 1116px; margin-right: 30px;">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="mainBox">
+                                    <div class="MainImg">
+                                        <img src="https://www.cinntra.com/add/SAP/images/Support.jpg" alt="Support">
+                                    </div>
+                                    <div class="Content">
+                                        <h5 style="color: #f76a0e;">Space-Efficient Design</h5>
+                                        <p>Optimize rooftop space with fewer panels while maximizing energy output,
+                                            ensuring a sleek and efficient installation for your home.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+                    id="DOwnPagination"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                        tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span><span
+                        class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="ClientTestimonials">
+        <div class="container">
+            <div class="TitleNew">
+                <h2>Client Testimonials</h2>
+                <p>Success stories from our clients that tell us the real-time benefits.</p>
+            </div>
+            <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-28ec106513fb37c55" aria-live="off">
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
+                        style="width: 336px; margin-right: 30px;">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="MainYoutubeFrame">
+
+
+                                    <video controls="" poster="https://www.cinntra.com/add/SAP/images/thumbnail-1.webp">
+                                        <source src="https://www.cinntra.com/add/SAP/video-2.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ClientsInfoHere">
+                                    <li>LIT India</li>
+                                    <span class="css">Customer Success Story</span>
+                                    <p>Simran Sodhi, MD of LIT India recognizes the efforts of Cinntra to make their
+                                        workflow process with the help of SAP B1 ERP solution. The cutting-edge
+                                        technology helps in ensuring high-level quality control according to industry
+                                        standards.
+                                    </p>
+                                    <div class="CustomerInfo">
+                                        <li>Simran Sodhi</li>
+                                        <span>MD, LIT India</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
+                        style="width: 336px; margin-right: 30px;">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="MainYoutubeFrame">
+
+
+
+                                    <video controls="" poster="https://www.cinntra.com/add/SAP/images/thumbnail-2.webp">
+                                        <source src="https://www.cinntra.com/add/SAP/video-1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ClientsInfoHere">
+                                    <li>RHVL Group</li>
+                                    <span class="css">Customer Success Story</span>
+                                    <p>Join us on the exceptional journey of RHVL Group and Cinntra, where we meet
+                                        together to revolutionize the real estate business. Watch the Video by Churmani
+                                        Rana, Accounts Head for a detailed view of the growth achieved with Best ERP in
+                                        India.
+                                    </p>
+                                    <div class="CustomerInfo">
+                                        <li>Churmani Rana</li>
+                                        <span>Accounts Head, RHVL Group</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                    aria-controls="swiper-wrapper-28ec106513fb37c55" aria-disabled="false"></div>
+                <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
+                    aria-label="Previous slide" aria-controls="swiper-wrapper-28ec106513fb37c55" aria-disabled="true">
+                </div>
+                <div
+                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                        aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet"
+                        tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                </div>
+                <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48" style="--progress: 0.7457444444444444;">
+                        <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span>23s</span>
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- industries -->
+    <!-- <section class="industriesMobile" id="industries">
+        <div class="container">
+            <div class="industries_title text-center">
+                <h2>Industries We Serve</h2>
+                <p>Our SAP engineers have a wide experience across all the verticals to keep their business performance
+                    excellent at all <br> times with SAP Business one industry-specific solutions.</p>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/manufacturing.svg"
+                        alt="Manufacturing">
+                    <li>Manufacturing</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/pharma.svg"
+                        alt="Pharmaceutical">
+                    <li>Pharmaceutical</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/construction.svg"
+                        alt="Construction">
+                    <li>Construction</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/food.svg"
+                        alt="F &amp; B">
+                    <li>F &amp; B</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/logistics.svg"
+                        alt="Logistics">
+                    <li>Logistics</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/trading.svg"
+                        alt="Trading">
+                    <li>Trading</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/retail.svg"
+                        alt="Retail">
+                    <li>Retail</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/flask.png"
+                        alt="Chemical">
+                    <li>Chemical</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/education.svg"
+                        alt="Education">
+                    <li>Education</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/bank.png" alt="BFSI">
+                    <li>BFSI</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/house.png"
+                        alt="Real-Estate">
+                    <li>Real-Estate</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/food-service.png"
+                        alt="Hospitality">
+                    <li>Hospitality</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/healthcare.png"
+                        alt="Healthcare">
+                    <li>Healthcare</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/cinema.png"
+                        alt="Entertainment">
+                    <li>Entertainment</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/automobile.svg"
+                        alt="Automotive">
+                    <li>Automotive</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/cloth-factory.png"
+                        alt="Textile">
+                    <li>Textile</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/airplane.png"
+                        alt="Aerospace">
+                    <li>Aerospace</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/thunderbolt.png"
+                        alt="Energy">
+                    <li>Energy</li>
+                </div>
+            </div>
+            <div class="mobileshere">
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/necklace.png"
+                        alt="Jewellery">
+                    <li>Jewellery</li>
+                </div>
+                <div class="industries_box">
+                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/oil.png"
+                        alt="Oil &amp; Gas">
+                    <li>Oil &amp; Gas</li>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- steps -->
     <section style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
         <div class="heading">
-            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500;" class="p-3">How We Make It Happen:
+            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500;" class="p-3">How We Make It
+                Happen:
                 Stress
                 - Free 6.6Kw Solar Panel Installation</p>
         </div>
@@ -229,365 +950,742 @@
         </div>
     </section>
 
-    <div class="bottom__line"></div>
-    <!-- <section class="design-section">
-        <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500;">How We Make It Happen: Stress
-            - Free 6.6Kw Solar Panel Installation</p>
-        <div class="timeline">
-            <div class="timeline-empty">
+    <!-- help -->
+    <!-- <section id="mySwiperMobile">
+        <div class="container">
+            <div class="MainTItle">
+                <h4>How Can We Help You?</h4>
             </div>
-            <div class="timeline-middle">
-                <div class="timeline-circle"></div>
+            <div class="swiper mySwiperMobile swiper-initialized swiper-horizontal swiper-backface-hidden">
+                <div class="swiper-wrapper" id="swiper-wrapper-75faf85eb51dd655" aria-live="polite"
+                    style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px);">
+                    <div class="swiper-slide swiper-slide-active" style="width: 336px; margin-right: 30px;" role="group"
+                        aria-label="1 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/License.jpg" alt="License">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">License</h5>
+                                <p>We provide SAP One Time licenses or Licenses as a Subscription. So one can easily buy
+                                    the desired license as per the needat a fair price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" style="width: 336px; margin-right: 30px;" role="group"
+                        aria-label="2 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/Consulting.jpg" alt="Consulting">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">Consulting</h5>
+                                <p>Our consultants aggressively work to understand the client's requirements and provide
+                                    appropriate project consultation, planning &amp; preparation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="3 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/Implementation.jpg"
+                                    alt="Implementation">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">Implementation</h5>
+                                <p>Our highly-skilled functional &amp; technical engineers thoroughly analyze clients'
+                                    requirements to provide a seamless implementation strategy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="4 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/Support.jpg" alt="Support">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">Support</h5>
+                                <p>Minimize operational expenditures and optimize operations through our versatile
+                                    Onsite, Onshore, and Offshore application support models.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="5 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/Audit.jpg" alt="Audit">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">Audit</h5>
+                                <p>Spots all issues that hinder operational efficiency and what improvements are
+                                    required to enhance the business productivity</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="6 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/sap-b1.jpg" alt="SAP B1 Cloud">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">SAP B1 Cloud</h5>
+                                <p>Host your SAP Business One on a secure Cloud platform at unbeatable pricing. So the
+                                    information can be accessible at any time regardless of location.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="7 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/Customization.jpg" alt="Customization">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">Customization</h5>
+                                <p>We have extensive experience in industry-specific add-on creation and software
+                                    development on the BTP platform to automate overall business operations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="8 / 8">
+                        <div class="mainBox">
+                            <div class="MainImg">
+                                <img src="https://www.cinntra.com/add/SAP/images/WebPortal.jpg" alt="Web Portal">
+                            </div>
+                            <div class="Content">
+                                <h5 style="color: #f76a0e;">Web Portal</h5>
+                                <p>Specialized in engineering the B2B or B2C portal. So the companies can accelerate the
+                                    business' reachability by extending it to the web.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
+                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
+                        aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet"
+                        tabindex="0" role="button" aria-label="Go to slide 2"></span><span
+                        class="swiper-pagination-bullet" tabindex="0" role="button"
+                        aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
+                        role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
+                        tabindex="0" role="button" aria-label="Go to slide 5"></span><span
+                        class="swiper-pagination-bullet" tabindex="0" role="button"
+                        aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0"
+                        role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet"
+                        tabindex="0" role="button" aria-label="Go to slide 8"></span>
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
             </div>
-            <div class="timeline-component timeline-content">
-                <h3 style="font-size: 22px;margin-bottom: 6px; font-weight: 600;">Step 1: Understanding Your Needs</h3>
-                <p>We start by listening to your priority. Our team comprehensively understands your requirements to
-                    create tailored solar plans that fit your lifestyle and home perfectly.
-                </p>Our seasoned team ensures a smooth and hassle-free solar installation experience. Here's our
-                meticulous 4-step process:
-
-            </div>
-            <div class="timeline-component timeline-content">
-                <h3 style="font-size: 22px;margin-bottom: 6px; font-weight: 600;">Step 2: Installation</h3>
-                <p>Our seasoned team ensures a smooth and hassle-free solar installation experience. Here's our
-                    meticulous 4-step process:
-                </p>
-                <ol>
-                    <li style="margin: 6px 0;"><span style="font-weight: 600;">1. Inspection</span> - A thorough site
-                        inspection is conducted to determine the ideal location for solar
-                        panels. This step maximizes solar energy utilization while prioritizing safety.
-                    </li>
-                    <li style="margin: 6px 0;"><span style="font-weight: 600;">2. Prefixing</span> Solar Panels - Prior
-                        to installing PV Solar Panels, we expertly install robust
-                        brackets and racking within your space, setting the foundation for a secure and efficient solar
-                        setup.
-                    </li>
-                    <li style="margin: 6px 0;"><span style="font-weight: 600;">
-                            3. Mounting</span> Panels - With precision, we securely clamp the solar panels to the
-                        racking, utilizing
-                        extruded aluminum clamps. The panels are seamlessly connected to the DC isolator via carefully
-                        managed cables.
-                    </li>
-                    <li style="margin: 6px 0;"><span style="font-weight: 600;">
-                            4. Connection</span> - In the final step, we establish crucial connections, linking solar
-                        panels to both
-                        the inverter and the grid. This ensures a direct channel for free energy from the sun to power
-                        your home efficiently.
-                    </li>
-                </ol>
-                <p>Always expect a smooth transition to solar energy, where every detail is handled with expertise and
-                    precision.
-                </p>
-            </div>
-            <div class="timeline-middle">
-                <div class="timeline-circle"></div>
-            </div>
-            <div class="timeline-empty">
-            </div>
-
-            <div class="timeline-empty">
-            </div>
-
-            <div class="timeline-middle">
-                <div class="timeline-circle"></div>
-            </div>
-            <div class=" timeline-component timeline-content">
-                <h3 style="font-size: 22px;margin-bottom: 6px; font-weight: 600;">Step 3: Continuous Support</h3>
-                <p>Our commitment extends beyond installation. Anticipate ongoing maintenance and dedicated support,
-                    ensuring your solar system consistently operates at its best with enduring efficiency and unwavering
-                    performance. At Solar 365, we're here for you every step of the way.
-                </p>
-            </div>
-
         </div>
     </section> -->
+
+    <!-- Trust -->
+    <section class="NetSuiteImplementationThree" id="NetSuiteImplementationThree">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="NetSuiteContentHere">
+                        <!-- <span style="color: #ffff57;">CMMI Level 3 Company</span> -->
+                        <h2 style="color: #f76a0e;">Can You Trust Us?</h2>
+                        <p>At Solar 365, our commitment to your satisfaction extends beyond promises—we deliver
+                            excellence at every step.</p>
+                        <ul style="color: #fff;list-style: disc;">
+                            <li style="margin: 10px 0;"><span class="dot">Transparent Service:</span> As the most
+                                trusted solar retailer, transparency is our hallmark. From initial consultations to
+                                project completion, expect clear communication and on-time customer support.
+                            </li>
+                            <li style="margin: 10px 0;"><span class="dot">Licensed Expertise:</span> Our licensed
+                                electricians ensure flawless installations and grid connections. With Solar 365, there's
+                                no need for return visits—we get it right the first time, backed by our extensive
+                                25-year panel warranty.
+                            </li>
+                            <li style="margin: 10px 0;"><span class="dot">Industry Accolades:</span> Accredited by
+                                industry standards and proud members of the Clean Energy Council, Solar 365 stands as a
+                                beacon of quality and reliability. We follow stringent guidelines, ensuring best
+                                practices in every installation.
+                            </li>
+                        </ul>
+
+                        <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-whatever="Schedule a Call" style="color: #fff;background-color: #f76a0e;" class="BtnSchedule">Book a Discovery Call</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- infrastructure -->
+    <!-- <section class="NetSuiteImplementationFour" id="NetSuiteImplementationFour">
+        <div class="container">
+            <div class="TItleHEre">
+                <h4>SAP Infrastructure</h4>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/financial-management.png"
+                                alt="Financial Management">
+                        </div>
+                        <h3>Financial Management</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/customer-management.png"
+                                alt="Sales and Customer Management">
+                        </div>
+                        <h3>Sales and Customer Management</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/inventory-management.png"
+                                alt="Purchasing &amp; Inventory Control">
+                        </div>
+                        <h3>Purchasing &amp; Inventory Control</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/supply-chain-management.png"
+                                alt="Supply Chain Management">
+                        </div>
+                        <h3>Supply Chain Management</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/business-intelligence.png"
+                                alt="Business Intelligence">
+                        </div>
+                        <h3>Business Intelligence</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/analytics.png"
+                                alt="Analytics &amp; Reporting">
+                        </div>
+                        <h3>Analytics &amp; Reporting</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/manufacturing.png" alt="Manufacturing">
+                        </div>
+                        <h3>Manufacturing</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="Fourcontent">
+                        <div class="icon">
+                            <img src="https://www.cinntra.com/add/SAP/images/administration.png" alt="Administration">
+                        </div>
+                        <h3>Administration</h3>
+                    </div>
+                </div>
+                <button><a href="#demo" class="BtnSchedule">Book a Discovery Call</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="CounterSectionHere" id="CounterSectionHere">
+        <div class="container-fluid">
+            <div class="about-counter-title">
+                <h6>Upscale Your Business With Personalized SAP Solutions!</h6>
+                <p>We follow all the industrial compliance to provide customized SAP ERP Solutions.</p>
+            </div>
+            <div class="row justify-content-evenly">
+                <div class="col-lg-2 col-6">
+                    <div class="AllMAnage">
+                        <li class="CounterImage" style="background-color: #F4EFFF;">
+                            <img src="https://www.cinntra.com/assets/image/counter/staff.png" alt="Experts">
+                        </li>
+                        <div class="counter-box colored">
+                            <span class="counter">200</span><span class="counter-plus">+</span>
+                            <p>Experts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="AllMAnage">
+                        <li class="CounterImage" style="background-color: #F4EFFF;">
+                            <img src="https://www.cinntra.com/assets/image/counter/trophy.png" alt="Implementations">
+                        </li>
+                        <div class="counter-box">
+                            <span class="counter">700</span><span class="counter-plus">+</span>
+                            <p>Implementations</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="AllMAnage">
+                        <li class="CounterImage" style="background-color: #F4EFFF;">
+                            <img src="https://www.cinntra.com/assets/image/counter/analytics.png" alt="12 Add-Ons">
+                        </li>
+                        <div class="counter-box">
+                            <span class="counter">12</span><span class="counter-plus">+</span>
+                            <p>12 Add-Ons</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="AllMAnage">
+                        <li class="CounterImage" style="background-color: #F4EFFF;">
+                            <img src="https://www.cinntra.com/add/SAP/images/24-hours.png" alt="24/7 Support">
+                        </li>
+                        <div class="counter-box">
+                            <span class="counter">24</span><span class="counter-plus"><span
+                                    style="font-size: 34px; line-height: 70px;">/7</span></span>
+                            <p>24/7 Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-6">
+                    <div class="AllMAnage">
+                        <li class="CounterImage" style="background-color: #F4EFFF;">
+                            <img src="https://www.cinntra.com/add/SAP/images/years-of-excellence.png"
+                                alt="Years of Excellence">
+                        </li>
+                        <div class="counter-box">
+                            <span class="counter">28</span><span class="counter-plus">+</span>
+                            <p>Years of Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Brands -->
+    <section class="Cinntra-Clients-achieved" id="Cinntra-Clients-achieved">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12 mb-4">
+                    <h3 style="color: #f76a0e;" class="h1 fw-bold text-center">Brands We Install</h3>
+                    <!-- <p class="h5 text-center">Clients achieved success with <b style="color: #f76a0e;">Solar 365</b> -->
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://www.cinntra.com/add/SAP/images/side.webp" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div class="row brands__container">
+                        <div class="col-sm-4 brand_image_box">
+                            <img src="./assets/alpha.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+                        <div class="col-sm-4 brand_image_box">
+                            <img src="./assets/froniuss.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+                        <div class="col-sm-4 brand_image_box">
+                            <img src="./assets/goodwe.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+                    </div>
+                    <div class="row brands__container">
+                        <div class="col-sm-4 brand_image_box" style="background-color: #eee;">
+                            <img src="./assets/growatt.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+                        <div class="col-sm-4 brand_image_box">
+                            <img src="./assets/huawei.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+                        <div class="col-sm-4 brand_image_box">
+                            <img src="./assets/jinko.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+                    </div>
+                    <div class="row brands__container">
+                        <div class="col-sm-3 brand_image_box">
+                            <img src="./assets/sma.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+                        <div class="col-sm-3 brand_image_box"></div>
+                        <div class="col-sm-3 brand_image_box">
+
+                            <img src="./assets/solis.webp" class="img-fluid brand_image" alt="brands">
+                        </div>
+
+                    </div>
+                    <!-- <div class="container">
+                        <div class="row bg-info">
+                            <div class="col-md-12 px-2">
+                                <div class="client-slider slick-initialized slick-slider">
+                                    <div class="slick-list">
+                                        <div class="slick-track"
+                                            style="opacity: 1; width: 1260px; transform: translate3d(-540px, 0px, 0px); transition: transform 3000ms linear 0s;">
+                                            <div class="item slick-slide slick-cloned" data-slick-index="-5" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/alpha.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-cloned" data-slick-index="-4" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/froniuss.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-cloned" data-slick-index="-3" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/goodwe.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-cloned" data-slick-index="-2" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/growatt.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-cloned" data-slick-index="-1" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/huawei.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide" data-slick-index="0" aria-hidden="true"
+                                                tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/jinko.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide" data-slick-index="1" aria-hidden="true"
+                                                tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/sma.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide" data-slick-index="2" aria-hidden="true"
+                                                tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/solar-panel.avif" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide" data-slick-index="3" aria-hidden="true"
+                                                tabindex="0" style="width: 60px;">
+                                                <img src="./assets/solis.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-current slick-active"
+                                                data-slick-index="4" aria-hidden="false" tabindex="0"
+                                                style="width: 60px;">
+                                                <img src="./assets/alpha.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-active" data-slick-index="5"
+                                                aria-hidden="false" tabindex="0" style="width: 60px;">
+                                                <img src="./assets/froniuss.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-active" data-slick-index="6"
+                                                aria-hidden="false" tabindex="0" style="width: 60px;">
+                                                <img src="./assets/goodwe.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-active" data-slick-index="7"
+                                                aria-hidden="false" tabindex="0" style="width: 60px;">
+                                                <img src="./assets/growatt.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-cloned slick-active" data-slick-index="8"
+                                                id="" aria-hidden="false" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/huawei.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-cloned" data-slick-index="9" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/jinko.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                                            <div class="item slick-slide slick-cloned" data-slick-index="10" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/sma.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+
+                                            <div class="item slick-slide slick-cloned" data-slick-index="12" id=""
+                                                aria-hidden="true" tabindex="-1" style="width: 60px;">
+                                                <img src="./assets/solis.webp" class="img-fluid" alt="cinntra">
+                                            </div>
+                          
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- faq -->
-    <div class="bottom__line"></div>
-    <div class="flex justify-center items-start my-2 px-4">
-        <div class="w-full sm:w-10/12  my-1">
-            <p style="font-size: 2rem;color: #f76a0e;font-weight: 500;">Frequently Asked Question</p>
-            <ul class="flex flex-col">
-                <li class="bg-white my-2 shadow-md" x-data="accordion(1)">
-                    <h6 @click="handleClick()"
-                        class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                        <span>Where does Solar 365 provide services in Australia?</span>
-                        <svg style="color: #f76a0e;" :class="handleRotate()"
-                            class="fill-current h-6 w-6 transform transition-transform duration-500"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
-                            </path>
-                        </svg>
-                        </h2>
-                        <div x-ref="tab" :style="handleToggle()"
-                            class="border-l-2 border-orange-400 overflow-hidden max-h-0 duration-500 transition-all">
-                            <p class="p-3 text-gray-900">
-                                Solar 365 proudly serves Perth, Busselton, Brisbane, and Adelaide, bringing
-                                state-of-the-art
-                                solar solutions to homes across these locations.
-
-                            </p>
+    <section id="ProfessionalNetSuiteSupport" class="ProfessionalNetSuiteSupport" style="background-color: #F5F6F7;">
+        <div class="container widthMinimize">
+            <div style="text-align:center;">
+                <h6 style="color: #f76a0e;">FAQs</h6>
+            </div>
+            <div class="faq-list">
+                <ul>
+                    <li>
+                        <i class="fa fa-question-circle icon-help" aria-hidden="true"></i> <a data-bs-toggle="collapse"
+                            class="collapse" data-bs-target="#faq-list-1">Where does Solar 365 provide services in
+                            Australia?<img src="https://www.cinntra.com/add/SAP/images/down.png" alt=""
+                                class="icon-show" aria-hidden="true"><img
+                                src="https://www.cinntra.com/add/SAP/images/up-arrow.png" alt="" class="icon-close">
+                        </a>
+                        <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                            <p>SAP Business One is one of the most seamless ERP implementations crafted to automate your
+                                business. An equipped ERP business has a smart workflow to generate quick insights.</p>
                         </div>
-                </li>
-                <li class="bg-white my-2 shadow-md" x-data="accordion(2)">
-                    <h6 @click="handleClick()"
-                        class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                        <span>How can I benefit from a 6.6kW solar system in Perth or Busselton?</span>
-                        <svg style="color: #f76a0e;" :class="handleRotate()"
-                            class="fill-current h-6 w-6 transform transition-transform duration-500"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
-                            </path>
-                        </svg>
-                        </h2>
-                        <div class="border-l-2 border-orange-400 overflow-hidden max-h-0 duration-500 transition-all"
-                            x-ref="tab" :style="handleToggle()">
-                            <p class="p-3 text-gray-900">
-                                With Solar 365, residents in Perth and Busselton can maximize savings on electricity
-                                bills,
-                                enjoy future-ready solutions. And optimize rooftop space for a sleek, efficient
+                    </li>
+                    <li>
+                        <i class="fa fa-question-circle icon-help" aria-hidden="true"></i> <a data-bs-toggle="collapse"
+                            data-bs-target="#faq-list-2" class="collapsed">How can I benefit from a 6.6kW solar system
+                            in Perth or Busselton?<img src="https://www.cinntra.com/add/SAP/images/down.png" alt=""
+                                class="icon-show" aria-hidden="true"><img
+                                src="https://www.cinntra.com/add/SAP/images/up-arrow.png" alt="" class="icon-close">
+                        </a>
+                        <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                            <p>With Solar 365, residents in Perth and Busselton can maximize savings on electricity
+                                bills, enjoy future-ready solutions. And optimize rooftop space for a sleek, efficient
                                 installation.
-
                             </p>
                         </div>
-                </li>
-                <li class="bg-white my-2 shadow-md" x-data="accordion(3)">
-                    <h6 @click="handleClick()"
-                        class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                        <span>Is Solar 365 a trusted solar retailer in Brisbane and Adelaide?</span>
-                        <svg style="color: #f76a0e;" :class="handleRotate()"
-                            class="fill-current h-6 w-6 transform transition-transform duration-500"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
-                            </path>
-                        </svg>
-                        </h2>
-                        <div class="border-l-2 border-orange-400 overflow-hidden max-h-0 duration-500 transition-all"
-                            x-ref="tab" :style="handleToggle()">
-                            <p class="p-3 text-gray-900">
-                                Absolutely. As the most trusted solar retailer, Solar 365 provides transparent services,
+                    </li>
+                    <li>
+                        <i class="fa fa-question-circle icon-help" aria-hidden="true"></i> <a data-bs-toggle="collapse"
+                            data-bs-target="#faq-list-3" class="collapsed">Is Solar 365 a trusted solar retailer in
+                            Brisbane and Adelaide?<img src="https://www.cinntra.com/add/SAP/images/down.png" alt=""
+                                class="icon-show" aria-hidden="true"><img
+                                src="https://www.cinntra.com/add/SAP/images/up-arrow.png" alt="" class="icon-close">
+                        </a>
+                        <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                            <p>Absolutely. As the most trusted solar retailer, Solar 365 provides transparent services,
                                 licensed expertise, and industry accolades, ensuring a reliable and efficient solar
-                                journey
-                                for residents in Brisbane and Adelaide.
-
+                                journey for residents in Brisbane and Adelaide.
                             </p>
                         </div>
-                </li>
-                <li class="bg-white my-2 shadow-md" x-data="accordion(4)">
-                    <h6 @click="handleClick()"
-                        class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                        <span>Which brands does Solar 365 install in these locations?</span>
-                        <svg style="color: #f76a0e;" :class="handleRotate()"
-                            class="fill-current h-6 w-6 transform transition-transform duration-500"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
-                            </path>
-                        </svg>
-                        </h2>
-                        <div class="border-l-2 border-orange-400 overflow-hidden max-h-0 duration-500 transition-all"
-                            x-ref="tab" :style="handleToggle()">
-                            <p class="p-3 text-gray-900">
-                                Solar 365 installs top-tier brands, including Huawei, GOODWE, Solis Inverters,
-                                Alpha-ESS,
+                    </li>
+                    <li>
+                        <i class="fa fa-question-circle icon-help" aria-hidden="true"></i> <a data-bs-toggle="collapse"
+                            data-bs-target="#faq-list-4" class="collapsed">Which brands does Solar 365 install in these
+                            locations?<img src="https://www.cinntra.com/add/SAP/images/down.png" alt=""
+                                class="icon-show" aria-hidden="true"><img
+                                src="https://www.cinntra.com/add/SAP/images/up-arrow.png" alt="" class="icon-close">
+                        </a>
+                        <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                            <p>Solar 365 installs top-tier brands, including Huawei, GOODWE, Solis Inverters, Alpha-ESS,
                                 Fronius, GROWATT, and Jinko Solar, guaranteeing quality and reliability in every
                                 installation.
-
                             </p>
                         </div>
-                </li>
-                <li class="bg-white my-2 shadow-md" x-data="accordion(5)">
-                    <h6 @click="handleClick()"
-                        class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer">
-                        <span>How does Solar 365 cater to ongoing support in these regions?
-                        </span>
-                        <svg style="color: #f76a0e;" :class="handleRotate()"
-                            class="fill-current h-6 w-6 transform transition-transform duration-500"
-                            viewBox="0 0 20 20">
-                            <path
-                                d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10">
-                            </path>
-                        </svg>
-                        </h2>
-                        <div class="border-l-2 border-orange-400 overflow-hidden max-h-0 duration-500 transition-all"
-                            x-ref="tab" :style="handleToggle()">
-                            <p class="p-3 text-gray-900">
-                                We understand the importance of continuous support. Our team in Perth, Busselton,
-                                Brisbane,
-                                and Adelaide ensures ongoing maintenance and assistance, ensuring your solar system
-                                operates
-                                at peak efficiency throughout its life, backed by our 25-year panel warranty.
-
+                    </li>
+                    <li>
+                        <i class="fa fa-question-circle icon-help" aria-hidden="true"></i> <a data-bs-toggle="collapse"
+                            data-bs-target="#faq-list-5" class="collapsed">How does Solar 365 cater to ongoing support
+                            in these regions?
+                            <img src="https://www.cinntra.com/add/SAP/images/down.png" alt="" class="icon-show"
+                                aria-hidden="true"><img src="https://www.cinntra.com/add/SAP/images/up-arrow.png" alt=""
+                                class="icon-close"> </a>
+                        <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                            <p>We understand the importance of continuous support. Our team in Perth, Busselton,
+                                Brisbane, and Adelaide ensures ongoing maintenance and assistance, ensuring your solar
+                                system operates at peak efficiency throughout its life, backed by our 25-year panel
+                                warranty.
                             </p>
                         </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="ProfessionalNetSuiteSupport" class="ProfessionalNetSuiteSupport">
+        <div class="container widthMinimize">
+            <div style="text-align:center;">
+                <h6>Ready for Solar Power?</h6>
+            </div>
+            <div class="faq-list">
+                <p>Experience the Solar 365 difference today. Get in touch for a free consultation and step into a
+                    brighter, more sustainable future with our top-tier solar solutions.
+                </p>
+                <br />
+                <p>Let's power your home together!</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="col-md-12" id="demo">
+                        <div class="sign-up-form-wrap position-relative z-index shadow-lg rounded gray-light-bg">
+                            <div class="sign-up-form-header text-center mb-2">
+                                <h4 class="RFD">Enquiry Form</h4>
+                                <!-- <p>Connect With Us For Personalized Business Solution</p> -->
+                            </div>
+                            <div class="message-box d-none">
+                                <div class="alert alert-danger"></div>
+                            </div>
+                            <form  id="getQuoteFrm" class="login-signup-form ign-up-form" onsubmit="fetchPopEnquireForm()">
+                                <div class="form-group">
+                                    <div class="input-group input-group-merge">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name" id="pop_name"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-merge">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email" id="pop_email"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-merge">
+                                        <input type="text" name="number" class="form-control" id="pop_number"
+                                            placeholder="Your Number" required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-merge">
+                                        <input type="text" name="address" id="pop_address" class="form-control" placeholder="Address"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group input-group-merge">
+                                        <input type="text" name="zipcode" id="pop_zipcode" class="form-control" placeholder="Zipcode"
+                                            required="">
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-12 pt-3">
+                                        <div class="form-group country">
+                                            <select name="type-of-usage" id="pop_type-of-usage" required
+                                                style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
+                                                <option value="">Type of usage</option>
+                                                <option value="residentials">Residentials</option>
+                                                <option value="commercial">Commercial</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-12 pt-3">
+                                        <div class="form-group country">
+                                            <select name="propduct" id="pop_product"
+                                                style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
+                                                <option value="">Product</option>
+                                                <option value="solar + inverter">Solar + Inverter</option>
+                                                <option value="battery">Battery</option>
+                                                <option value="solar + inverter + battery">Solar + Inverter + Battery
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- <div class="form-group">
+                                    <div class="input-group input-group-merge">
+                                        <textarea name="message" id="msg" class="form-control"
+                                            placeholder="Write your message" cols="30" rows="4" required=""></textarea>
+                                    </div>
+                                </div> -->
+
+                                <div class="form-group">
+                                    <input type="submit"  name="sub" id="submit" class="btn solid-btn btn-block"
+                                        value="Send your query" style="background-color: #f76a0e;">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- disclaimer -->
-    <div class="disclaimer">
-        <h4>Ready for Solar Power?</h4>
-        <p>Experience the Solar 365 difference today. Get in touch for a free consultation and step <br />into a
-            brighter,
-            more sustainable future with our top-tier solar solutions.
-        </p>
-        <p style="margin-top: 20px;">Let's power your home together!</p>
-    </div>
-    <!-- pop up modal -->
-    <div id="pop-up-form" class="demo-page"
-        style="margin: auto;backdrop-filter: blur(4px); justify-content: center;align-items: center;position: absolute;top: 10px;left: 50%;width: 100%;transform: translate(-50%, 0%);">
-        <section class="demo-page-content">
-            <div class="href-target" id="input-types"></div>
-            <h1>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-align-justify">
-                    <line x1="21" y1="10" x2="3" y2="10" />
-                    <line x1="21" y1="6" x2="3" y2="6" />
-                    <line x1="21" y1="14" x2="3" y2="14" />
-                    <line x1="21" y1="18" x2="3" y2="18" />
-                </svg>
-                Enquiry Form
-                <p style="position: absolute;top: 20px;right: 10px;" id="close">X</p>
-            </h1>
-            <form onsubmit="submitmy()">
-            <div class="nice-form-group">
-                <label>Name</label>
-                <input type="text" placeholder="Your name" value="" id="name" required />
-            </div>
-            <div class="nice-form-group">
-                <label>Email</label>
-                <input type="email" placeholder="Your email" value="" id="email" required />
-            </div>
-            <div class="nice-form-group">
-                <label>Phone Number</label>
-                <input type="number" placeholder="Your phonenumber" value="" id="number" required />
-            </div>
-            <div class="nice-form-group">
-                <label>Address</label>
-                <input type="text" placeholder="Your address" value="" id="address" required />
-            </div>
-            <div class="nice-form-group">
-                <label>City</label>
-                <input type="text" placeholder="Your city" value="" id="city" required />
-            </div>
-            <div class="nice-form-group">
-                <label>State</label>
-                <input type="text" placeholder="Your state" value="" id="state" required />
-            </div>
-            <div class="nice-form-group">
-                <label>Zipcode</label>
-                <input type="number" placeholder="Your zipcode" value="" id="zipcode" required />
-            </div>
-            <div class="nice-form-group">
-                <label>Type of usage</label>
-                <select id="type-of-usage" required class="select">
-                    <option value="">Type of usage</option>
-                    <option value="residentials">Residentials</option>
-                    <option value="Commercial">Commercial</option>
-                </select>
-            </div>
-            <div class="nice-form-group">
-                <label>Product</label>
-                <select id="product" required class="select">
-                    <option value="">Product</option>
-                    <option value="solar + inverter">Solar + Inverter</option>
-                    <option value="battery">Battery</option>
-                    <option value="solar + inverter + battery">Solar + Inverter + Battery</option>
-                </select>
-            </div>
-            <details>
-                <summary>
-                    <button class="toggle-code" type="submit">
-                        Submit
-                    </button>
-                </summary>
-            </details>
-        </form>
-        </section>
-    </div>
-    <div class="loader" id="loading-page">
-    </div>
-    <div class="msg_box" id="msg_box">
-        <p id="mess"></p>
-    </div>
+    <a class="contact-popup-widgetCinntra" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-whatever="Schedule a Call">
+        <span class="contact-popup" style="background-color: #f76a0e;">Book a Discovery Call</span></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://www.cinntra.com/add/SAP/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: false,
 
-        document.querySelector('.display-button').addEventListener('click', () => {
-            document.querySelector('#pop-up-form').style.display = 'flex'
-        })
-
-        document.querySelector('.display-buttons').addEventListener('click', () => {
-            document.querySelector('#pop-up-form').style.display = 'flex'
-        })
-        document.querySelector('#close').addEventListener('click', () => {
-            document.querySelector('#pop-up-form').style.display = 'none'
-        })
-
-        document.addEventListener('alpine:init', () => {
-            Alpine.store('accordion', {
-                tab: 0
-            });
-
-            Alpine.data('accordion', (idx) => ({
-                init() {
-                    this.idx = idx;
-                },
-                idx: -1,
-                handleClick() {
-                    this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
-                },
-                handleRotate() {
-                    return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
-                },
-                handleToggle() {
-                    return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+            autoplay: {
+                delay: 90000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+            },
+            on: {
+                autoplayTimeLeft(s, time, progress) {
+                    progressCircle.style.setProperty("--progress", 1 - progress);
+                    progressContent.textContent = `${Math.ceil(time / 1000)}s`;
                 }
-            }));
-        })
+            }
+        });
 
-        const root = document.documentElement;
-        const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
-        const marqueeContent = document.querySelector("ul.marquee-content");
 
-        root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+        $(document).ready(function () {
 
-        for (let i = 0; i < marqueeElementsDisplayed; i++) {
-            marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-        }
+            $('.counter').each(function () {
+                $(this).prop('Counter', 0).animate({
+                    Counter: $(this).text()
+                }, {
+                    duration: 4000,
+                    easing: 'swing',
+                    step: function (now) {
+                        $(this).text(Math.ceil(now));
+                    }
+                });
+            });
+        });
 
-        function submitmy() {
+        var swiper = new Swiper(".CinntraServices", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                autoplay: false
+            },
+        });
+
+        var swiper = new Swiper(".mySwiperMobile", {
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script async=""
+        src="https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js"></script>
+    <script>
+        var wa_btnSetting = { "btnColor": "#16BE45", "ctaText": "", "cornerRadius": 40, "marginBottom": 20, "marginLeft": 20, "marginRight": 20, "btnPosition": "left", "whatsAppNumber": "918882709959", "welcomeMessage": "Hi, there! \nHow can I help you?", "zIndex": 999999, "btnColorScheme": "light" };
+        var wa_widgetSetting = { "title": "Cinntra Infotech", "subTitle": "online", "headerBackgroundColor": "#075B51", "headerColorScheme": "light", "greetingText": "Hi there! \nHow can I help you?", "ctaText": "Start Chat", "btnColor": "#1A1A1A", "cornerRadius": 40, "welcomeMessage": "Hello", "btnColorScheme": "light", "brandImage": "https://uploads-ssl.webflow.com/5f68a65cd5188c058e27c898/6204c4267b92625c9770f687_whatsapp-chat-widget-dummy-logo.png", "darkHeaderColorScheme": { "title": "#333333", "subTitle": "#4F4F4F" } };
+        window.onload = () => {
+            _waEmbed(wa_btnSetting, wa_widgetSetting);
+        };
+    </script>
+    <script>
+        function fetchEnquireForm() {
             event.preventDefault();
             let name = document.querySelector('#name')
             let email = document.querySelector('#email')
             let phone = document.querySelector('#number')
             let typeofusage = document.querySelector('#type-of-usage')
             let product = document.querySelector('#product')
-            let city = document.getElementById("city")
-            let state = document.getElementById("state")
             let address = document.querySelector('#address')
             let zipcode = document.getElementById("zipcode")
-            let loading = document.querySelector('#loading-page')
-            let popupform = document.querySelector('#pop-up-form')
-            let msgBox = document.querySelector('#msg_box')
-            let msg = document.querySelector('#mess')
 
-            // console.log("name", name.value, "email", email.value, "phone", phone.value, "commercial", "city", city.value, "state", state.value, "address", address.value, "zipcode", zipcode.value,  getCategary(), productValue)
-
-            loading.style.display = 'flex'
-            popupform.style.display = 'none'
             const formdata = new FormData();
             formdata.append("email", email.value);
             formdata.append("name", name.value);
             formdata.append("phone", phone.value);
             formdata.append("message", "hello");
-            formdata.append("city", city.value)
             formdata.append("address", address.value)
             formdata.append("proptype", typeofusage.value)
             formdata.append("zipcode", zipcode.value)
-            formdata.append("state", state.value)
             formdata.append("service", product.value)
             formdata.append('type', '3')
 
@@ -600,7 +1698,6 @@
             fetch("https://www.solar365.net.au/blog_admin/api/enquiry.php", requestOptions)
                 .then(response => response.json())
                 .then(result => {
-                    loading.style.display = 'none';
                     if(result?.status === true){
                         name.value = ""
                         email.value = ""
@@ -608,27 +1705,80 @@
                         address.value = ""
                         // message.value = ""
                         zipcode.value = ""
-                        city.value = ""
-                        state.value = ""
                         product.value = ""
                         typeofusage.value = ""
-                        console.log(result)
-                        popupform.style.display = 'none'
+                        console.log('result',result)
                         // return window.location.href = "./thank-you.html"
-                        msgBox.style.display = 'flex'
-                        msg.innerHTML = result?.data
-                        setTimeout(() => {
-                            msgBox.style.display = 'none'
-                        }, 6000)
                         return
                     }
-                    popupform.style.display = 'flex'
                     return
                 })
                 .catch(error => console.log('error', error));
         }
+        function fetchPopEnquireForm() {
+            event.preventDefault();
+            let name = document.querySelector('#pop_name')
+            let email = document.querySelector('#pop_email')
+            let phone = document.querySelector('#pop_number')
+            let typeofusage = document.querySelector('#pop_type-of-usage')
+            let product = document.querySelector('#pop_product')
+            let address = document.querySelector('#pop_address')
+            let zipcode = document.getElementById("pop_zipcode")
 
+            const formdata = new FormData();
+            formdata.append("email", email.value);
+            formdata.append("name", name.value);
+            formdata.append("phone", phone.value);
+            formdata.append("message", "hello");
+            formdata.append("address", address.value)
+            formdata.append("proptype", typeofusage.value)
+            formdata.append("zipcode", zipcode.value)
+            formdata.append("service", product.value)
+            formdata.append('type', '3')
+
+            var requestOptions = {
+                method: 'POST',
+                body: formdata,
+                redirect: 'follow'
+            };
+
+            fetch("https://www.solar365.net.au/blog_admin/api/enquiry.php", requestOptions)
+                .then(response => response.json())
+                .then(result => {
+                    if(result?.status === true){
+                        name.value = ""
+                        email.value = ""
+                        phone.value = ""
+                        address.value = ""
+                        // message.value = ""
+                        zipcode.value = ""
+                        product.value = ""
+                        typeofusage.value = ""
+                        console.log('result',result)
+                        // return window.location.href = "./thank-you.html"
+                        return
+                    }
+                    return
+                })
+                .catch(error => console.log('error', error));
+        }
     </script>
+
+    <!-- <div id="wa-btn-wrapper" style="position: fixed; z-index: 999999; bottom: 20px; left: 20px;">
+        <div id="wa_btn-content" style="background: #16BE45; padding:  12px; border-radius: 100%">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M18.1225 14.9458C17.8183 14.7895 16.3033 14.0473 16.0215 13.9469C15.7397 13.8409 15.5332 13.7907 15.3295 14.1032C15.123 14.4129 14.5371 15.102 14.3529 15.3113C14.1744 15.5178 13.993 15.5429 13.6889 15.3894C11.8808 14.4854 10.695 13.7767 9.50361 11.7315C9.18832 11.1874 9.8189 11.2265 10.4076 10.0518C10.5081 9.84534 10.4578 9.66956 10.3797 9.51331C10.3016 9.35706 9.68776 7.84478 9.43106 7.22815C9.18274 6.62826 8.92604 6.71197 8.7391 6.70081C8.56053 6.68965 8.35684 6.68965 8.15037 6.68965C7.9439 6.68965 7.61187 6.76777 7.33006 7.0719C7.04825 7.38161 6.25305 8.12659 6.25305 9.63887C6.25305 11.1511 7.35517 12.616 7.50584 12.8225C7.66209 13.0289 9.67381 16.1316 12.7625 17.4681C14.7157 18.3107 15.4802 18.3833 16.4567 18.2382C17.051 18.1489 18.2759 17.496 18.5298 16.7734C18.7837 16.0535 18.7837 15.4369 18.7084 15.3085C18.6331 15.1718 18.4266 15.0937 18.1225 14.9458Z"
+                    fill="white"></path>
+                <path
+                    d="M24.0292 7.65625C23.3986 6.15792 22.4946 4.81306 21.3422 3.65792C20.198 2.50948 18.8395 1.5966 17.3439 0.970982C15.8093 0.326451 14.1798 0 12.5002 0H12.4444C10.7535 0.00837054 9.11567 0.343192 7.57549 1.00167C6.09267 1.63371 4.74699 2.54821 3.61344 3.6942C2.47226 4.84654 1.57661 6.18583 0.95719 7.67857C0.315449 9.22433 -0.00821224 10.8677 0.000158294 12.5586C0.00962607 14.4963 0.468048 16.4054 1.33944 18.1362V22.3772C1.33944 22.7176 1.47467 23.0441 1.71537 23.2848C1.95607 23.5255 2.28253 23.6607 2.62293 23.6607H6.86679C8.59752 24.5321 10.5067 24.9905 12.4444 25H12.5029C14.1743 25 15.7954 24.6763 17.3216 24.043C18.8097 23.4248 20.163 22.5226 21.306 21.3867C22.4583 20.2455 23.3651 18.9118 23.9985 17.4247C24.657 15.8845 24.9918 14.2467 25.0002 12.5558C25.0085 10.8566 24.6793 9.20759 24.0292 7.65625ZM19.8132 19.8772C17.8573 21.8136 15.2624 22.8795 12.5002 22.8795H12.4527C10.7702 22.8711 9.09893 22.4526 7.62293 21.6657L7.38855 21.5402H3.45998V17.6116L3.33442 17.3772C2.54759 15.9012 2.12906 14.2299 2.12069 12.5474C2.10953 9.76562 3.17259 7.15402 5.12293 5.18694C7.07047 3.21987 9.67371 2.1317 12.4555 2.12054H12.5029C13.898 2.12054 15.2513 2.39118 16.5264 2.9269C17.7708 3.44866 18.8869 4.19922 19.8467 5.15904C20.8037 6.11607 21.5571 7.23493 22.0788 8.47935C22.6201 9.76841 22.8908 11.1356 22.8852 12.5474C22.8685 15.3265 21.7775 17.9297 19.8132 19.8772Z"
+                    fill="white"></path>
+            </svg>
+            <p style="color: white; margin-left: 0 !important">
+
+            </p>
+        </div>
+    </div> -->
 </body>
 
 </html>
