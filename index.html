@@ -8,30 +8,15 @@
     <title>Solar 365</title>
     <meta name="description" content="Solar 365">
     <link href="https://www.cinntra.com/assets/img/favicon.webp" rel="icon">
+    <link rel="stylesheet" href="./landing.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" media="all">
     <link rel="stylesheet" href="https://www.cinntra.com/add/SAP/style1.css">
+    <link rel="stylesheet" href="./splide-4.1.3/dist/css/splide.min.css">
+    <script src="./splide-4.1.3/dist/js/splide.min.js" defer></script>
     <script type="text/javascript" async=""
         src="https://cdn.mouseflow.com/projects/c71f614c-a50a-44bf-abbe-2adb9734c574.js"></script>
-    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5CN3KQ4"></script>
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5CN3KQ4');</script>
-
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10808531864"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'AW-10808531864');
-    </script>
     <style>
         .NetSuiteImplementationThree {
             background-image: url(https://www.cinntra.com/add/SAP/images/hero1-bg.webp);
@@ -93,7 +78,7 @@
             position: absolute;
             width: 8px;
             height: 8px;
-            background-color: #fff;
+            background-color: #f76a0e;
             border-radius: 50%;
             top: 40%;
             left: -8%;
@@ -356,6 +341,86 @@
 
         }
 
+        .strong__footprint .industries_box {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .strong__footprint {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap !important;
+            max-width: 100%;
+        }
+
+        .footprint {
+            overflow: hidden;
+            background-image: url(https://images.unsplash.com/photo-1500076656116-558758c991c1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            min-height: 40vh;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(100% / 4 - 2%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .testimonial__box {
+            width: calc(100% / 3);
+            /* border-right: 2px solid #eee; */
+            padding: 10px 0;
+        }
+
+        .testimonial__text {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 15px;
+        }
+
+        @media(max-width: 1000px) {
+            #demo {
+                width: 100%;
+                margin-top: 15px;
+            }
+        }
+
+        @media(max-width: 800px) {
+            .strong__footprint {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .footprint {
+                width: 80%;
+            }
+        }
+
+
+
+
+        @media (max-width: 767.99px) {
+            section.industries {
+                display: flex;
+            }
+
+        }
+
+        /* @media(max-width: 600px) {
+            .splide__track{
+                width: 600px;
+                background-color: #5ad67d;
+            }
+        } */
         @media(max-width: 575px) {
             .brands__container {
                 gap: 20px;
@@ -364,8 +429,24 @@
             .brand_image {
                 width: 45%;
             }
+
+            .testimonial__box {
+                width: 90% !important;
+                margin: 0 100px;
+                align-self: center;
+            }
+
+
         }
     </style>
+    <script defer>
+        window.addEventListener('load', () => {
+            const slide = document.querySelector('#splide__track')
+            const wid = ((parseInt(window.innerWidth) / 2) - 40)
+            console.log('width', wid)
+            slide.style.width = wid + 'px'
+        })
+    </script>
     <script type="text/javascript" async=""
         src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10808531864/?random=1705466723925&amp;cv=11&amp;fst=1705466723925&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be41a0v9171552252&amp;gcd=11l1l1l1l1&amp;dma=0&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fwww.cinntra.com%2Fsap-business-one-software&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=SAP%20Business%20One%20ERP%20Solution%20%7C%20Best%20ERP%20Software%20for%20SMEs%20%7C%20Cinntra&amp;auid=1835340865.1705296396&amp;fledge=1&amp;uaa=x86&amp;uab=64&amp;uafvl=Not_A%2520Brand%3B8.0.0.0%7CChromium%3B120.0.6099.217%7CGoogle%2520Chrome%3B120.0.6099.217&amp;uamb=0&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script>
     <script type="text/javascript" async=""
@@ -391,7 +472,9 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="MainContent">
-                        <p>Premier Solar Solutions Provider</p>
+                        <p
+                            style="background-color: #f76a0e;width: auto; text-align: center;color: #fff;border-radius: 50px;box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.3);padding: 5px 0;">
+                            Premier Solar Solutions Provider</p>
                         <h1><span style="color: #f76a0e">5000+</span> Homes in Australia Use
                             6.6KW Solar System, What About You?
                         </h1>
@@ -413,32 +496,32 @@
                         <form id="getQuoteFrm" class="login-signup-form ign-up-form" onsubmit="fetchEnquireForm()">
                             <div class="form-group">
                                 <div class="input-group input-group-merge">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name" id="name"
-                                        required="">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                        id="name" required="">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group input-group-merge">
-                                    <input type="email" name="email" class="form-control" placeholder="Your Email" id="email"
-                                        required="">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email"
+                                        id="email" required="">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group input-group-merge">
-                                    <input type="text" name="number" class="form-control" placeholder="Your Number" id="number"
-                                        required="">
+                                    <input type="text" name="number" class="form-control" placeholder="Your Number"
+                                        id="number" required="">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group input-group-merge">
-                                    <input type="text" name="address" class="form-control" placeholder="Address" id="address"
-                                        required="">
+                                    <input type="text" name="address" class="form-control" placeholder="Address"
+                                        id="address" required="">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group input-group-merge">
-                                    <input type="text" name="zipcode" class="form-control" placeholder="Zipcode" id="zipcode"
-                                        required="">
+                                    <input type="text" name="zipcode" class="form-control" placeholder="Zipcode"
+                                        id="zipcode" required="">
                                 </div>
                             </div>
                             <div class="row ">
@@ -446,7 +529,7 @@
                                     <div class="form-group country">
                                         <select name="type-of-usage" id="type-of-usage" required
                                             style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
-                                            <option value="">Type of usage</option>
+                                            <option value="">Building Type</option>
                                             <option value="residentials">Residentials</option>
                                             <option value="commercial">Commercial</option>
                                         </select>
@@ -459,7 +542,7 @@
                                     <div class="form-group country">
                                         <select name="product" id="product" required
                                             style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
-                                            <option value="">Product</option>
+                                            <option value="">Select Your System</option>
                                             <option value="solar + inverter">Solar + Inverter</option>
                                             <option value="battery">Battery</option>
                                             <option value="solar + inverter + battery">Solar + Inverter + Battery
@@ -477,7 +560,7 @@
                             </div> -->
 
                             <div class="form-group">
-                                <input type="submit"  name="sub" id="submit" class="btn solid-btn btn-block"
+                                <input type="submit" name="sub" id="submit" class="btn solid-btn btn-block"
                                     value="Send your query" style="background-color: #f76a0e;">
                             </div>
                         </form>
@@ -486,55 +569,7 @@
             </div>
         </div>
     </section>
-    <!-- strong footprints -->
-    <section class="industries" id="industries">
-        <div class="container">
-            <div class="industries_title text-center">
-                <h2 style="color: #f76a0e;">Strong Footprints In</h2>
-                <br>
-                <br>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="industries_box">
-                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/manufacturing.svg"
-                            alt="Manufacturing">
-                        <li>Perth</li>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="industries_box">
-                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/pharma.svg"
-                            alt="Pharmaceutical">
-                        <li>Busselton</li>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="industries_box">
-                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/construction.svg"
-                            alt="Construction">
-                        <li>Brisbane </li>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="industries_box">
-                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/food.svg"
-                            alt="F &amp; B">
-                        <li>Adelaide</li>
-                    </div>
-                </div>
 
-
-            </div>
-            <div style="display: flex;justify-content: center;align-items: center;">
-                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                data-whatever="Schedule a Call"
-                    style="padding: 9px 21px;background-color: #f76a0e;color: #fff; border-radius: 4px;font-weight: 500;margin-top: 20px;text-decoration: none;border: none; display: inline-block;"
-                    class="BtnSchedule">Book a Discovery Call</a>
-            </div>
-
-        </div>
-    </section>
     <!-- Benefits -->
     <section class="SwiperSliderHere">
         <div class="container">
@@ -732,19 +767,19 @@
                     excellent at all <br> times with SAP Business one industry-specific solutions.</p>
             </div>
             <div class="mobileshere">
-                <div class="industries_box">
+                <div class="industries_box" style="width: 90%;">
                     <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/manufacturing.svg"
                         alt="Manufacturing">
                     <li>Manufacturing</li>
                 </div>
-                <div class="industries_box">
+                <div class="industries_box" style="width: 90%;">
                     <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/pharma.svg"
                         alt="Pharmaceutical">
                     <li>Pharmaceutical</li>
                 </div>
             </div>
             <div class="mobileshere">
-                <div class="industries_box">
+                <div class="industries_box" style="width: 90%;">
                     <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/construction.svg"
                         alt="Construction">
                     <li>Construction</li>
@@ -856,10 +891,9 @@
     <!-- steps -->
     <section style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
         <div class="heading">
-            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500;" class="p-3">How We Make It
-                Happen:
-                Stress
-                - Free 6.6Kw Solar Panel Installation</p>
+            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500; text-align: center;"
+                class="p-3">How We Make It
+                Happen: <br />Stress - Free 6.6Kw Solar Panel Installation</p>
         </div>
 
         <div class="blog-card">
@@ -907,20 +941,24 @@
                     4-step process:
                 </p>
                 <ul class="">
-                    <li><span style="font-weight: 600;">Inspection -</span> A thorough site inspection is conducted to
+                    <li><span style="font-weight: 600;color:#f76a0e;">Inspection -</span> A thorough site inspection is
+                        conducted to
                         determine the ideal location for solar
                         panels. This step maximizes solar energy utilization while prioritizing safety.</li>
-                    <li><span style="font-weight: 600;">Prefixing Solar Panels -</span> Prior to installing PV Solar
+                    <li><span style="font-weight: 600;color:#f76a0e;">Prefixing Solar Panels -</span> Prior to
+                        installing PV Solar
                         Panels,
                         we expertly install robust brackets
                         and racking within your space, setting the foundation for a secure and efficient solar setup.
                     </li>
-                    <li><span style="font-weight: 600;">Mounting Panels -</span> With precision, we securely clamp the
+                    <li><span style="font-weight: 600;color:#f76a0e;">Mounting Panels -</span> With precision, we
+                        securely clamp the
                         solar
                         panels to the racking, utilizing
                         extruded aluminum clamps. The panels are seamlessly connected to the DC isolator via carefully
                         managed cables.</li>
-                    <li><span style="font-weight: 600;">Connection -</span> In the final step, we establish crucial
+                    <li><span style="font-weight: 600;color: #f76a0e;">Connection -</span> In the final step, we
+                        establish crucial
                         connections, linking solar panels to both the
                         inverter and the grid. This ensures a direct channel for free energy from the sun to power your
                         home
@@ -1089,16 +1127,19 @@
                         <p>At Solar 365, our commitment to your satisfaction extends beyond promises—we deliver
                             excellence at every step.</p>
                         <ul style="color: #fff;list-style: disc;">
-                            <li style="margin: 10px 0;"><span class="dot">Transparent Service:</span> As the most
+                            <li style="margin: 10px 0;"><span class="dot" style="color: #f76a0e;">Transparent
+                                    Service:</span> As the most
                                 trusted solar retailer, transparency is our hallmark. From initial consultations to
                                 project completion, expect clear communication and on-time customer support.
                             </li>
-                            <li style="margin: 10px 0;"><span class="dot">Licensed Expertise:</span> Our licensed
+                            <li style="margin: 10px 0;"><span class="dot" style="color: #f76a0e;">Licensed
+                                    Expertise:</span> Our licensed
                                 electricians ensure flawless installations and grid connections. With Solar 365, there's
                                 no need for return visits—we get it right the first time, backed by our extensive
                                 25-year panel warranty.
                             </li>
-                            <li style="margin: 10px 0;"><span class="dot">Industry Accolades:</span> Accredited by
+                            <li style="margin: 10px 0;"><span class="dot" style="color: #f76a0e;">Industry
+                                    Accolades:</span> Accredited by
                                 industry standards and proud members of the Clean Energy Council, Solar 365 stands as a
                                 beacon of quality and reliability. We follow stringent guidelines, ensuring best
                                 practices in every installation.
@@ -1106,7 +1147,8 @@
                         </ul>
 
                         <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                        data-whatever="Schedule a Call" style="color: #fff;background-color: #f76a0e;" class="BtnSchedule">Book a Discovery Call</a>
+                            data-whatever="Schedule a Call" style="color: #fff;background-color: #f76a0e;"
+                            class="BtnSchedule">Book a Discovery Call</a>
                     </div>
                 </div>
 
@@ -1263,6 +1305,495 @@
         </div>
     </section> -->
 
+    <!-- Testimonial -->
+
+    <div class="container__wrapper">
+        <div class="heading">
+            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500; text-align: center;"
+                class="p-3">What Our Customers Say About us?</p>
+        </div>
+        <input checked type=radio name="slider" id="slide1" class="slider__class" />
+        <input type=radio name="slider" id="slide2" class="slider__class" />
+        <input type=radio name="slider" id="slide3" class="slider__class" />
+
+        <div class="slider-wrapper-div">
+            <div class="inner-div">
+                <article class="article">
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>The installation was smooth, and their team's attention to detail was remarkable.
+                                The system has not only significantly reduced my electricity bills but also
+                                added value to my home. I'm grateful for Solar 365's exceptional customer
+                                service and commitment to renewable energy. They are undoubtedly the best solar
+                                company in Perth!</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Amandeep Kaur</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>Solar 365 installed my home’s Growatt Solar power with batteries.<br />
+                                Very professional and courteous team. They showed up for the installation on
+                                time and completed the project on the same day.<br>
+                                Well organized and cleaned up afterwards as well as explained what they were
+                                doing every step of the way.<br>
+                                I highly recommend them for Solar power projects.<br>
+                            </p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Ezzedin Habib</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>It was a rainy day. But it did not stop the team with Mathew from installing my
+                                replacement solar panels and system. The work was excellent and professional.
+                                10/10 good job</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Graham Moppett</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>Highly recommend 365! After calling a few places I found 365 and they were so
+                                helpful. Explained everything to me in detail, came out and had a look and then
+                                got the job done. This was the first company out of 10 I spoke to that wasn’t
+                                trying to upsell me anything but just help me get what I needed fix. I will
+                                definitely use them again and recommend them to everyone I know.</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Assja Sherratt</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>Very efficient and friendly team. Installation in three hours! Premises left
+                                clean and neat. Definately the company I would recommend</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Willie De Klerk</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>I had the fortunate experience of getting solar system installations done by
+                                these blokes especially Akki who made it a smooth job right from dismantling of
+                                the existing panels to the new system installation. I would highly recommend
+                                their services to anyone who might be looking out to hiring someone for solar
+                                panel installation….very good experience indeed</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Vikram Aulakh</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article">
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>I couldn't be happier with the 6.6 kW solar system installed by Solar 365 in
+                                Perth. From start to finish, their team displayed professionalism and expertise.
+                                The system has significantly reduced my electricity bills, and the customer
+                                service provided by Solar 365 has been exceptional.</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Varinder Singh</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>Showed up early and we’re fast at installing the system Dimpal and mahesh helped
+                                me through the app and how everything worked, highly recommend</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">Ethan Roulston</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__box">
+                        <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                            &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                        </div>
+                        <div class="testimonial__text">
+                            <p>Very Happy with Solar 365. They went through and discussed multiple options
+                                regarding panels and inverter. Excellent communication throughout the process.
+                                Installation was professional and done in a timely manner, all at a great price.
+                                Highly recommend.</p>
+                        </div>
+                        <div
+                            style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                            <div
+                                style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                            </div>
+                            <div
+                                style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                <p style="font-weight: 600;">James Dryland</p>
+                                <p style="font-size: 12px;">Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            <!-- .inner -->
+        </div>
+        <!-- .slider-wrapper -->
+
+        <div class="slider-prev-next-control">
+            <label for=slide1></label>
+            <label for=slide2></label>
+            <label for=slide3></label>
+        </div>
+        <!-- .slider-prev-next-control -->
+
+        <div class="slider-dot-control">
+            <label for=slide1></label>
+            <label for=slide2></label>
+            <label for=slide3></label>
+        </div>
+        <!-- .slider-dot-control -->
+    </div>
+
+
+    <!-- <section class="container-fluid">
+        <div class="heading">
+            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500; text-align: center;"
+                class="p-3">What Our Customer Say About us?</p>
+        </div>
+        <div style="display: flex;justify-content: center;align-items: center;width: 100%;padding: 20px 10px;">
+            <section class="splide" aria-label="Splide Basic HTML Example">
+                <div class="splide__track container" id="splide__track">
+                    <ul class="splide__list container ul__container">
+                        <li class="splide__slide container slide__box" style="display: flex;justify-content: center;align-items: flex-start;">
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>The installation was smooth, and their team's attention to detail was remarkable.
+                                        The system has not only significantly reduced my electricity bills but also
+                                        added value to my home. I'm grateful for Solar 365's exceptional customer
+                                        service and commitment to renewable energy. They are undoubtedly the best solar
+                                        company in Perth!</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Amandeep Kaur</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>Solar 365 installed my home’s Growatt Solar power with batteries.<br />
+                                        Very professional and courteous team. They showed up for the installation on
+                                        time and completed the project on the same day.<br>
+                                        Well organized and cleaned up afterwards as well as explained what they were
+                                        doing every step of the way.<br>
+                                        I highly recommend them for Solar power projects.<br>
+                                    </p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Ezzedin Habib</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>It was a rainy day. But it did not stop the team with Mathew from installing my
+                                        replacement solar panels and system. The work was excellent and professional.
+                                        10/10 good job</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Graham Moppett</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide container slide__box" style="display: flex;justify-content: center;align-items: flex-start;">
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>Highly recommend 365! After calling a few places I found 365 and they were so
+                                        helpful. Explained everything to me in detail, came out and had a look and then
+                                        got the job done. This was the first company out of 10 I spoke to that wasn’t
+                                        trying to upsell me anything but just help me get what I needed fix. I will
+                                        definitely use them again and recommend them to everyone I know.</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Assja Sherratt</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>Very efficient and friendly team. Installation in three hours! Premises left
+                                        clean and neat. Definately the company I would recommend</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Willie De Klerk</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>I had the fortunate experience of getting solar system installations done by
+                                        these blokes especially Akki who made it a smooth job right from dismantling of
+                                        the existing panels to the new system installation. I would highly recommend
+                                        their services to anyone who might be looking out to hiring someone for solar
+                                        panel installation….very good experience indeed</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Vikram Aulakh</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide container slide__box" style="display: flex;justify-content: center;align-items: flex-start;">
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>I couldn't be happier with the 6.6 kW solar system installed by Solar 365 in
+                                        Perth. From start to finish, their team displayed professionalism and expertise.
+                                        The system has significantly reduced my electricity bills, and the customer
+                                        service provided by Solar 365 has been exceptional.</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Varinder Singh</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>Showed up early and we’re fast at installing the system Dimpal and mahesh helped
+                                        me through the app and how everything worked, highly recommend</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">Ethan Roulston</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="testimonial__box">
+                                <div style="width: 100%;display: flex;justify-content: center;align-items: center;">
+                                    &#x2B50;&#x2B50;&#x2B50;&#x2B50;&#x2B50;
+                                </div>
+                                <div
+                                     class="testimonial__text">
+                                    <p>Very Happy with Solar 365. They went through and discussed multiple options
+                                        regarding panels and inverter. Excellent communication throughout the process.
+                                        Installation was professional and done in a timely manner, all at a great price.
+                                        Highly recommend.</p>
+                                </div>
+                                <div
+                                    style="width: 100%;display: flex;justify-content: flex-start;align-items: center;padding: 8px 10px;">
+                                    <div
+                                        style="width: 20%; display: flex;justify-content: center;align-items: center;border-radius: 50%;overflow: hidden;">
+                                        <img src="./assets/default-avatar.jpg" class="img-fluid" />
+                                    </div>
+                                    <div
+                                        style="width: 80%; display: flex;justify-content: center;align-items: flex-start;flex-direction: column;padding: 0 10px;">
+                                        <p style="font-weight: 600;">James Dryland</p>
+                                        <p style="font-size: 12px;">Customer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section> -->
     <!-- Brands -->
     <section class="Cinntra-Clients-achieved" id="Cinntra-Clients-achieved">
         <div class="container">
@@ -1496,6 +2027,55 @@
         </div>
     </section>
 
+    <!-- strong footprints -->
+    <section class="industries" id="industries">
+        <div class="container-fluid">
+            <div class="industries_title text-center">
+                <h2 style="color: #f76a0e;">Strong Footprints In</h2>
+                <br>
+                <br>
+            </div>
+            <div class="strong__footprint">
+                <div class=" footprint">
+                    <div class="industries_box" style="width: 90%;">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/manufacturing.svg"
+                            alt="Manufacturing">
+                        <li>Perth</li>
+                    </div>
+                </div>
+                <div class=" footprint">
+                    <div class="industries_box" style="width: 90%;">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/pharma.svg"
+                            alt="Pharmaceutical">
+                        <li>Busselton</li>
+                    </div>
+                </div>
+                <div class=" footprint">
+                    <div class="industries_box" style="width: 90%;">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/construction.svg"
+                            alt="Construction">
+                        <li>Brisbane </li>
+                    </div>
+                </div>
+                <div class=" footprint">
+                    <div class="industries_box" style="width: 90%;">
+                        <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/food.svg"
+                            alt="F &amp; B">
+                        <li>Adelaide</li>
+                    </div>
+                </div>
+
+
+            </div>
+            <div style="display: flex;justify-content: center;align-items: center;">
+                <a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-whatever="Schedule a Call"
+                    style="padding: 9px 21px;background-color: #f76a0e;color: #fff; border-radius: 4px;font-weight: 500;margin-top: 20px;text-decoration: none;border: none; display: inline-block;"
+                    class="BtnSchedule">Book a Discovery Call</a>
+            </div>
+
+        </div>
+    </section>
+
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -1510,17 +2090,18 @@
                             <div class="message-box d-none">
                                 <div class="alert alert-danger"></div>
                             </div>
-                            <form  id="getQuoteFrm" class="login-signup-form ign-up-form" onsubmit="fetchPopEnquireForm()">
+                            <form id="getQuoteFrm" class="login-signup-form ign-up-form"
+                                onsubmit="fetchPopEnquireForm()">
                                 <div class="form-group">
                                     <div class="input-group input-group-merge">
-                                        <input type="text" name="name" class="form-control" placeholder="Your Name" id="pop_name"
-                                            required="">
+                                        <input type="text" name="name" class="form-control" placeholder="Your Name"
+                                            id="pop_name" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group input-group-merge">
-                                        <input type="email" name="email" class="form-control" placeholder="Your Email" id="pop_email"
-                                            required="">
+                                        <input type="email" name="email" class="form-control" placeholder="Your Email"
+                                            id="pop_email" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -1531,14 +2112,14 @@
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group input-group-merge">
-                                        <input type="text" name="address" id="pop_address" class="form-control" placeholder="Address"
-                                            required="">
+                                        <input type="text" name="address" id="pop_address" class="form-control"
+                                            placeholder="Address" required="">
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="input-group input-group-merge">
-                                        <input type="text" name="zipcode" id="pop_zipcode" class="form-control" placeholder="Zipcode"
-                                            required="">
+                                        <input type="text" name="zipcode" id="pop_zipcode" class="form-control"
+                                            placeholder="Zipcode" required="">
                                     </div>
                                 </div>
                                 <div class="row ">
@@ -1546,7 +2127,7 @@
                                         <div class="form-group country">
                                             <select name="type-of-usage" id="pop_type-of-usage" required
                                                 style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
-                                                <option value="">Type of usage</option>
+                                                <option value="">Building Type</option>
                                                 <option value="residentials">Residentials</option>
                                                 <option value="commercial">Commercial</option>
                                             </select>
@@ -1559,7 +2140,7 @@
                                         <div class="form-group country">
                                             <select name="propduct" id="pop_product"
                                                 style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
-                                                <option value="">Product</option>
+                                                <option value="">Select Your System</option>
                                                 <option value="solar + inverter">Solar + Inverter</option>
                                                 <option value="battery">Battery</option>
                                                 <option value="solar + inverter + battery">Solar + Inverter + Battery
@@ -1577,7 +2158,7 @@
                                 </div> -->
 
                                 <div class="form-group">
-                                    <input type="submit"  name="sub" id="submit" class="btn solid-btn btn-block"
+                                    <input type="submit" name="sub" id="submit" class="btn solid-btn btn-block"
                                         value="Send your query" style="background-color: #f76a0e;">
                                 </div>
                             </form>
@@ -1599,6 +2180,11 @@
     <script src="https://www.cinntra.com/add/SAP/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var splide = new Splide('.splide');
+            splide.mount();
+        });
         const progressCircle = document.querySelector(".autoplay-progress svg");
         const progressContent = document.querySelector(".autoplay-progress span");
         var swiper = new Swiper(".mySwiper", {
@@ -1698,7 +2284,7 @@
             fetch("https://www.solar365.net.au/blog_admin/api/enquiry.php", requestOptions)
                 .then(response => response.json())
                 .then(result => {
-                    if(result?.status === true){
+                    if (result?.status === true) {
                         name.value = ""
                         email.value = ""
                         phone.value = ""
@@ -1707,7 +2293,7 @@
                         zipcode.value = ""
                         product.value = ""
                         typeofusage.value = ""
-                        console.log('result',result)
+                        console.log('result', result)
                         // return window.location.href = "./thank-you.html"
                         return
                     }
@@ -1745,7 +2331,7 @@
             fetch("https://www.solar365.net.au/blog_admin/api/enquiry.php", requestOptions)
                 .then(response => response.json())
                 .then(result => {
-                    if(result?.status === true){
+                    if (result?.status === true) {
                         name.value = ""
                         email.value = ""
                         phone.value = ""
@@ -1754,7 +2340,7 @@
                         zipcode.value = ""
                         product.value = ""
                         typeofusage.value = ""
-                        console.log('result',result)
+                        console.log('result', result)
                         // return window.location.href = "./thank-you.html"
                         return
                     }
