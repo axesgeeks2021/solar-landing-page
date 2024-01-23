@@ -386,6 +386,246 @@
             align-items: center;
             padding: 8px 15px;
         }
+        section.SwiperSliderHere{
+            padding: 0;
+        }
+
+        .banner__form {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #eee;
+            background-image: url(https://images.unsplash.com/photo-1705776611690-f1bcf7ab1b89?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            padding-left: 40px;
+            box-sizing: border-box;
+        }
+
+        .form {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            border-radius: 5px;
+            flex-direction: column;
+            padding: 0px 20px;
+            padding-top: 20px;
+        }
+
+        .form p {
+            margin: 0;
+            align-self: flex-start;
+            font-weight: 600;
+        }
+
+        .form .stay {
+            color: #f76a0e;
+        }
+
+        .form .quote {
+            font-size: 2.2rem;
+            font-weight: 600;
+        }
+
+        .form form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 0px;
+            overflow: hidden;
+        }
+
+        .form form input {
+            border: none;
+            outline: none;
+            background: none;
+            border: 1px solid #000;
+            border-radius: 4px;
+            width: 100%;
+            padding: 8px 10px;
+            margin: 5px 0;
+            color: #000;
+        }
+
+        .form form select {
+            border: none;
+            outline: none;
+            background: none;
+            border: 1px solid #000;
+            border-radius: 4px;
+            width: 100%;
+            padding: 10px 10px;
+            margin: 8px 0;
+            color: #000;
+        }
+
+        .form form select:not(:checked) {
+            color: #7580A1;
+        }
+
+        .submit-form-btn {
+            background-color: #f76a0e !important;
+            color: #fff !important;
+            font-weight: 600;
+            border: none !important;
+            width: 100% !important;
+        }
+
+        .banner__text {
+            width: 65%;
+            margin: auto;
+        }
+
+
+        .timeline {
+            width: 100%;
+            padding: 20px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            flex-direction: column;
+        }
+
+        .timeline__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px;
+            margin: 40px 0;
+            background-color: #7580A1;
+            background: url(https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+
+        .timeline__step {
+            width: 30%;
+        }
+
+        .timeline__step p {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 600;
+        }
+
+
+        .timeline__content {
+            width: 68%;
+            background-color: #fff;
+            position: relative;
+            top: 60px;
+            margin: auto;
+            padding: 10px 20px;
+            box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+
+        }
+
+
+        .counter__container {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #eee;
+        }
+
+        .counter__box {
+            width: calc(100% / 4 - 2%);
+            box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.3);
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 10px;
+            border-radius: 5px;
+
+        }
+
+        .counter__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .counter__img svg {
+            width: 20%;
+        }
+
+        .counter__box p {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .counter__text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        header{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4px 40px;
+        }
+        header div{
+            width: 30%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        header div img{
+            width: 40%;
+            position: relative;
+            object-fit: cover;
+        }
+        @media(max-width: 575px) {
+            .brands__container {
+                gap: 20px;
+            }
+
+            .brand_image {
+                width: 45%;
+            }
+
+            .testimonial__box {
+                width: 90% !important;
+                margin: 0 100px;
+                align-self: center;
+            }
+            header div img{
+                width: 100%;
+                padding: 10px 0;
+            }
+
+        }
+        @media (max-width: 700px) {
+            .counter__container {
+                flex-direction: column;
+                gap: 14px;
+            }
+
+            .counter__box {
+                width: 90%;
+            }
+        }
 
         @media(max-width: 1000px) {
             #demo {
@@ -403,9 +643,30 @@
             .footprint {
                 width: 80%;
             }
+            header div img{
+                width: 100%;
+                padding: 10px 0;
+            }
+            .timeline__step {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .timeline__box {
+                flex-direction: column;
+            }
+
+            .timeline__content {
+                width: 90%;
+            }
+
+            .counter__box {
+                width: calc(100% / 4 - 0.3%);
+            }
+
         }
-
-
 
 
         @media (max-width: 767.99px) {
@@ -415,29 +676,33 @@
 
         }
 
-        /* @media(max-width: 600px) {
-            .splide__track{
-                width: 600px;
-                background-color: #5ad67d;
-            }
-        } */
-        @media(max-width: 575px) {
-            .brands__container {
-                gap: 20px;
-            }
-
-            .brand_image {
+        @media (max-width: 900px) {
+            .form {
                 width: 45%;
             }
+        }
 
-            .testimonial__box {
-                width: 90% !important;
-                margin: 0 100px;
-                align-self: center;
+        @media (max-width: 600px) {
+            .form {
+                width: 85%;
             }
 
+            .banner__form {
+                padding: 0;
+                justify-content: center;
+                flex-direction: column-reverse;
+                padding-bottom: 20px;
+            }
+
+            .banner__text {
+                width: 90%;
+            }
 
         }
+
+
+
+
     </style>
     <script defer>
         window.addEventListener('load', () => {
@@ -456,117 +721,40 @@
 </head>
 
 <body>
-    <section class="NetSuiteImplementationUSA" id="NetSuiteImplementationUSA">
-        <div class="container">
-            <div class="LogoHere">
-                <div class="cinntra">
-                    <img src="./assets/logo.webp" alt="solar website logo">
-                </div>
-                <!-- <div class="cinntra">
-                    <img src="https://www.cinntra.com/add/SAP/images/sapb1.png" alt="cinntra">
-                </div>
-                <div class="netsuite">
-                    <img src="https://www.cinntra.com/add/SAP/images/sap-silver-1.png" alt="cinntra">
-                </div> -->
-            </div>
-            <div class="row">
-                <div class="col-lg-7">
-                    <div class="MainContent">
-                        <p
-                            style="background-color: #f76a0e;width: auto; text-align: center;color: #fff;border-radius: 50px;box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.3);padding: 5px 0;">
-                            Premier Solar Solutions Provider</p>
-                        <h1><span style="color: #f76a0e">5000+</span> Homes in Australia Use
-                            6.6KW Solar System, What About You?
-                        </h1>
-                    </div>
-                    <div class="bannerImgHere">
-                        <img src="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?q=80&w=2058&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="SAP Business One Solution cinntra">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-5" id="demo">
-                    <div class="sign-up-form-wrap position-relative z-index shadow-lg rounded gray-light-bg">
-                        <div class="sign-up-form-header text-center mb-2">
-                            <h4 class="RFD">Enquiry Form</h4>
-                            <!-- <p>Connect With Us For Personalized Business Solution</p> -->
-                        </div>
-                        <div class="message-box d-none">
-                            <div class="alert alert-danger"></div>
-                        </div>
-                        <form id="getQuoteFrm" class="login-signup-form ign-up-form" onsubmit="fetchEnquireForm()">
-                            <div class="form-group">
-                                <div class="input-group input-group-merge">
-                                    <input type="text" name="name" class="form-control" placeholder="Your Name"
-                                        id="name" required="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group input-group-merge">
-                                    <input type="email" name="email" class="form-control" placeholder="Your Email"
-                                        id="email" required="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group input-group-merge">
-                                    <input type="text" name="number" class="form-control" placeholder="Your Number"
-                                        id="number" required="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group input-group-merge">
-                                    <input type="text" name="address" class="form-control" placeholder="Address"
-                                        id="address" required="">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="input-group input-group-merge">
-                                    <input type="text" name="zipcode" class="form-control" placeholder="Zipcode"
-                                        id="zipcode" required="">
-                                </div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-lg-12 pt-3">
-                                    <div class="form-group country">
-                                        <select name="type-of-usage" id="type-of-usage" required
-                                            style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
-                                            <option value="">Building Type</option>
-                                            <option value="residentials">Residentials</option>
-                                            <option value="commercial">Commercial</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="row ">
-                                <div class="col-lg-12 pt-3">
-                                    <div class="form-group country">
-                                        <select name="product" id="product" required
-                                            style="width:100%;height: 47px; border-radius: 4px; outline: none; border: 1px solid lightgray; color: gray; font-size:13px">
-                                            <option value="">Select Your System</option>
-                                            <option value="solar + inverter">Solar + Inverter</option>
-                                            <option value="battery">Battery</option>
-                                            <option value="solar + inverter + battery">Solar + Inverter + Battery
-                                            </option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- <div class="form-group">
-                                <div class="input-group input-group-merge">
-                                    <textarea name="message" id="msg" class="form-control"
-                                        placeholder="Write your message" cols="30" rows="4" required=""></textarea>
-                                </div>
-                            </div> -->
-
-                            <div class="form-group">
-                                <input type="submit" name="sub" id="submit" class="btn solid-btn btn-block"
-                                    value="Send your query" style="background-color: #f76a0e;">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <div>
+            <img src="./assets/logo.webp" alt="website logo" class="logo"/>
+        </div>
+    </header>
+    <section class="banner__form">
+        <div class="form">
+            <p class="stay">Stay Connected</p>
+            <p class="quote">Get A Quote</p>
+            <form onsubmit="fetchEnquireForm()">
+                <input id="name" type="text" placeholder="Name" required />
+                <input id="email" type="text" placeholder="email" required />
+                <input id="mobile" type="text" placeholder="Mobile" required />
+                <input id="address" type="text" placeholder="Address" required />
+                <input id="zipcode" type="text" placeholder="Zipcode" required />
+                <select name="type-of-usage" id="type-of-usage" required>
+                    <option value="" selected disabled>Building Type</option>
+                    <option value="residentials">Residentials</option>
+                    <option value="commercial">Commercial</option>
+                </select>
+                <select name="product" id="product" required>
+                    <option value="" selected disabled>Select Your System</option>
+                    <option value="solar + inverter">Solar + Inverter</option>
+                    <option value="battery">Battery</option>
+                    <option value="solar + inverter + battery">Solar + Inverter + Battery
+                    </option>
+                </select>
+                <input type="submit" value="Send Message" class="submit-form-btn" />
+            </form>
+        </div>
+        <div class="banner__text">
+            <h1 style="color: #fff;"><span style="color: #f76a0e">5000+</span> Homes in Australia Use
+                6.6KW Solar System, What About You?
+            </h1>
         </div>
     </section>
 
@@ -668,454 +856,78 @@
         </div>
     </section>
 
-    <!-- <section class="ClientTestimonials">
-        <div class="container">
-            <div class="TitleNew">
-                <h2>Client Testimonials</h2>
-                <p>Success stories from our clients that tell us the real-time benefits.</p>
-            </div>
-            <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden">
-                <div class="swiper-wrapper" id="swiper-wrapper-28ec106513fb37c55" aria-live="off">
-                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2"
-                        style="width: 336px; margin-right: 30px;">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="MainYoutubeFrame">
-
-
-                                    <video controls="" poster="https://www.cinntra.com/add/SAP/images/thumbnail-1.webp">
-                                        <source src="https://www.cinntra.com/add/SAP/video-2.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="ClientsInfoHere">
-                                    <li>LIT India</li>
-                                    <span class="css">Customer Success Story</span>
-                                    <p>Simran Sodhi, MD of LIT India recognizes the efforts of Cinntra to make their
-                                        workflow process with the help of SAP B1 ERP solution. The cutting-edge
-                                        technology helps in ensuring high-level quality control according to industry
-                                        standards.
-                                    </p>
-                                    <div class="CustomerInfo">
-                                        <li>Simran Sodhi</li>
-                                        <span>MD, LIT India</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2"
-                        style="width: 336px; margin-right: 30px;">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="MainYoutubeFrame">
-
-
-
-                                    <video controls="" poster="https://www.cinntra.com/add/SAP/images/thumbnail-2.webp">
-                                        <source src="https://www.cinntra.com/add/SAP/video-1.mp4" type="video/mp4">
-                                    </video>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="ClientsInfoHere">
-                                    <li>RHVL Group</li>
-                                    <span class="css">Customer Success Story</span>
-                                    <p>Join us on the exceptional journey of RHVL Group and Cinntra, where we meet
-                                        together to revolutionize the real estate business. Watch the Video by Churmani
-                                        Rana, Accounts Head for a detailed view of the growth achieved with Best ERP in
-                                        India.
-                                    </p>
-                                    <div class="CustomerInfo">
-                                        <li>Churmani Rana</li>
-                                        <span>Accounts Head, RHVL Group</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
-                    aria-controls="swiper-wrapper-28ec106513fb37c55" aria-disabled="false"></div>
-                <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button"
-                    aria-label="Previous slide" aria-controls="swiper-wrapper-28ec106513fb37c55" aria-disabled="true">
-                </div>
-                <div
-                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-                        aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet"
-                        tabindex="0" role="button" aria-label="Go to slide 2"></span>
-                </div>
-                <div class="autoplay-progress">
-                    <svg viewBox="0 0 48 48" style="--progress: 0.7457444444444444;">
-                        <circle cx="24" cy="24" r="20"></circle>
-                    </svg>
-                    <span>23s</span>
-                </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- industries -->
-    <!-- <section class="industriesMobile" id="industries">
-        <div class="container">
-            <div class="industries_title text-center">
-                <h2>Industries We Serve</h2>
-                <p>Our SAP engineers have a wide experience across all the verticals to keep their business performance
-                    excellent at all <br> times with SAP Business one industry-specific solutions.</p>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box" style="width: 90%;">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/manufacturing.svg"
-                        alt="Manufacturing">
-                    <li>Manufacturing</li>
-                </div>
-                <div class="industries_box" style="width: 90%;">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/pharma.svg"
-                        alt="Pharmaceutical">
-                    <li>Pharmaceutical</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box" style="width: 90%;">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/construction.svg"
-                        alt="Construction">
-                    <li>Construction</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/food.svg"
-                        alt="F &amp; B">
-                    <li>F &amp; B</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/logistics.svg"
-                        alt="Logistics">
-                    <li>Logistics</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/trading.svg"
-                        alt="Trading">
-                    <li>Trading</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/retail.svg"
-                        alt="Retail">
-                    <li>Retail</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/flask.png"
-                        alt="Chemical">
-                    <li>Chemical</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/education.svg"
-                        alt="Education">
-                    <li>Education</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/bank.png" alt="BFSI">
-                    <li>BFSI</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/house.png"
-                        alt="Real-Estate">
-                    <li>Real-Estate</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/food-service.png"
-                        alt="Hospitality">
-                    <li>Hospitality</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/healthcare.png"
-                        alt="Healthcare">
-                    <li>Healthcare</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/cinema.png"
-                        alt="Entertainment">
-                    <li>Entertainment</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/automobile.svg"
-                        alt="Automotive">
-                    <li>Automotive</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/cloth-factory.png"
-                        alt="Textile">
-                    <li>Textile</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/airplane.png"
-                        alt="Aerospace">
-                    <li>Aerospace</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/thunderbolt.png"
-                        alt="Energy">
-                    <li>Energy</li>
-                </div>
-            </div>
-            <div class="mobileshere">
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/necklace.png"
-                        alt="Jewellery">
-                    <li>Jewellery</li>
-                </div>
-                <div class="industries_box">
-                    <img src="https://www.cinntra.com/add/erp-sap-business-one/assets/img/product/oil.png"
-                        alt="Oil &amp; Gas">
-                    <li>Oil &amp; Gas</li>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    
     <!-- steps -->
-    <section style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+    <section class="timeline">
         <div class="heading">
-            <p style="font-size: 2rem;margin-bottom: 1.2rem;color: #f76a0e;font-weight: 500; text-align: center;"
+            <p style="font-size: 2rem;color: #f76a0e;font-weight: 500; text-align: center;"
                 class="p-3">How We Make It
                 Happen: <br />Stress - Free 6.6Kw Solar Panel Installation</p>
         </div>
+        <div class="timeline__box">
+            <div class="timeline__step">
+                <p>Step 1: Understanding Your Needs</p>
+            </div>
+            <div class="timeline__content">
+                <p>We start by listening to your priority. Our team comprehensively understands your requirements to
+                    create tailored solar plans that fit your lifestyle and home perfectly. Through personalized
+                    consultations, we delve deeper into your Energy goals, Financial considerations, and
+                    Sustainability aspirations. This ensures a holistic understanding that forms the foundation for
+                    a truly customized solar solution in Australia.
 
-        <div class="blog-card">
-            <div class="meta">
-                <div class="photo"
-                    style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)">
-                </div>
-                <ul class="details">
-                    <li class="author">Step 1</li>
-                    <li class="date">Understanding your needs</li>
-                    <li class="tags">
-                </ul>
-            </div>
-            <div class="description">
-                <h1>Step 1: Understanding Your Needs</h1>
-                <!-- <h2>Opening a door to the future</h2> -->
-                <p> We start by listening to your priority. Our team comprehensively understands your requirements to
-                    create
-                    tailored solar plans that fit your lifestyle and home perfectly.
                 </p>
             </div>
         </div>
-        <div class="blog-card alt">
-            <div class="meta">
-                <div class="photo"
-                    style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-2.jpg)">
-                </div>
-                <ul class="details">
-                    <li class="author">Step 2</li>
-                    <li class="date">Installation</li>
-                    <!-- <li class="tags">
-                    <ul>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="#">Code</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                    </ul>
-                </li> -->
-                </ul>
+        <div class="timeline__box">
+            <div class="timeline__step">
+                <p>Step 2: Installation</p>
             </div>
-            <div class="description">
-                <h1>Step 2: Installation</h1>
-                <!-- <h2>Java is not the same as JavaScript</h2> -->
-                <p>Our seasoned team ensures a smooth and hassle-free solar installation experience. Here's our
-                    meticulous
-                    4-step process:
+            <div class="timeline__content">
+                <p style="font-size: 1.1rem;">Our seasoned team ensures a smooth and hassle-free solar installation
+                    experience. Here's our
+                    meticulous 4-step process:
                 </p>
-                <ul class="">
-                    <li><span style="font-weight: 600;color:#f76a0e;">Inspection -</span> A thorough site inspection is
-                        conducted to
-                        determine the ideal location for solar
-                        panels. This step maximizes solar energy utilization while prioritizing safety.</li>
-                    <li><span style="font-weight: 600;color:#f76a0e;">Prefixing Solar Panels -</span> Prior to
-                        installing PV Solar
-                        Panels,
-                        we expertly install robust brackets
-                        and racking within your space, setting the foundation for a secure and efficient solar setup.
+                <ul>
+                    <li><span style="color: #f76a0e;font-weight: 600;">Inspection -</span> A thorough site
+                        inspection is conducted to determine the ideal location for
+                        solar panels. This step maximizes solar energy utilization while prioritizing safety.
                     </li>
-                    <li><span style="font-weight: 600;color:#f76a0e;">Mounting Panels -</span> With precision, we
-                        securely clamp the
-                        solar
-                        panels to the racking, utilizing
-                        extruded aluminum clamps. The panels are seamlessly connected to the DC isolator via carefully
-                        managed cables.</li>
-                    <li><span style="font-weight: 600;color: #f76a0e;">Connection -</span> In the final step, we
-                        establish crucial
-                        connections, linking solar panels to both the
-                        inverter and the grid. This ensures a direct channel for free energy from the sun to power your
-                        home
-                        efficiently.</li>
+                    <li><span style="color: #f76a0e;font-weight: 600;">Prefixing Solar Panels -</span> Prior to
+                        installing PV Solar Panels, we expertly install robust
+                        brackets and racking within your space, setting the foundation for a secure and efficient
+                        solar setup.
+                    </li>
+                    <li><span style="color: #f76a0e;font-weight: 600;">Mounting Panels -</span> With precision, we
+                        securely clamp the solar panels to the racking,
+                        utilizing extruded aluminum clamps. The panels are seamlessly connected to the DC isolator
+                        via carefully managed cables.
+                    </li>
+                    <li><span style="color: #f76a0e;font-weight: 600;">Connection -</span> In the final step, we
+                        establish crucial connections, linking solar panels to
+                        both the inverter and the grid. This ensures a direct channel for free energy from the sun
+                        to power your home efficiently.
+                    </li>
                 </ul>
-                <p>Always expect a smooth transition to solar energy, where every detail is handled with expertise and
-                    precision.</p>
+                <p>Always expect a smooth transition to solar energy, where every detail is handled with expertise
+                    and precision.
+                </p>
             </div>
         </div>
-        <div class="blog-card">
-            <div class="meta">
-                <div class="photo"
-                    style="background-image: url(https://storage.googleapis.com/chydlx/codepen/blog-cards/image-1.jpg)">
-                </div>
-                <ul class="details">
-                    <li class="author">Step 3</li>
-                    <li class="date">Continuous Support</li>
-                </ul>
+        <div class="timeline__box">
+            <div class="timeline__step">
+                <p>Step 3: Continuous Support</p>
             </div>
-            <div class="description">
-                <h1>Step 3: Continuous Support</h1>
-                <!-- <h2>Opening a door to the future</h2> -->
-                <p> Our commitment extends beyond installation. Anticipate ongoing maintenance and dedicated support,
-                    ensuring your solar system consistently operates at its best with enduring efficiency and unwavering
-                    performance. At Solar 365, we're here for you every step of the way.</p>
+            <div class="timeline__content">
+                <p>Our commitment extends beyond installation. Anticipate ongoing maintenance and dedicated support,
+                    ensuring your solar system consistently operates at its best with enduring efficiency and
+                    unwavering performance. At Solar 365, we're here for you every step of the way, providing
+                    proactive monitoring and prompt resolution of any potential issues to guarantee a seamless and
+                    worry-free solar experience for years to come.
+                </p>
             </div>
         </div>
     </section>
-
-    <!-- help -->
-    <!-- <section id="mySwiperMobile">
-        <div class="container">
-            <div class="MainTItle">
-                <h4>How Can We Help You?</h4>
-            </div>
-            <div class="swiper mySwiperMobile swiper-initialized swiper-horizontal swiper-backface-hidden">
-                <div class="swiper-wrapper" id="swiper-wrapper-75faf85eb51dd655" aria-live="polite"
-                    style="transition-duration: 0ms; transition-delay: 0ms; transform: translate3d(0px, 0px, 0px);">
-                    <div class="swiper-slide swiper-slide-active" style="width: 336px; margin-right: 30px;" role="group"
-                        aria-label="1 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/License.jpg" alt="License">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">License</h5>
-                                <p>We provide SAP One Time licenses or Licenses as a Subscription. So one can easily buy
-                                    the desired license as per the needat a fair price.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide swiper-slide-next" style="width: 336px; margin-right: 30px;" role="group"
-                        aria-label="2 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/Consulting.jpg" alt="Consulting">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">Consulting</h5>
-                                <p>Our consultants aggressively work to understand the client's requirements and provide
-                                    appropriate project consultation, planning &amp; preparation.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="3 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/Implementation.jpg"
-                                    alt="Implementation">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">Implementation</h5>
-                                <p>Our highly-skilled functional &amp; technical engineers thoroughly analyze clients'
-                                    requirements to provide a seamless implementation strategy.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="4 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/Support.jpg" alt="Support">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">Support</h5>
-                                <p>Minimize operational expenditures and optimize operations through our versatile
-                                    Onsite, Onshore, and Offshore application support models.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="5 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/Audit.jpg" alt="Audit">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">Audit</h5>
-                                <p>Spots all issues that hinder operational efficiency and what improvements are
-                                    required to enhance the business productivity</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="6 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/sap-b1.jpg" alt="SAP B1 Cloud">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">SAP B1 Cloud</h5>
-                                <p>Host your SAP Business One on a secure Cloud platform at unbeatable pricing. So the
-                                    information can be accessible at any time regardless of location.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="7 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/Customization.jpg" alt="Customization">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">Customization</h5>
-                                <p>We have extensive experience in industry-specific add-on creation and software
-                                    development on the BTP platform to automate overall business operations.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="width: 336px; margin-right: 30px;" role="group" aria-label="8 / 8">
-                        <div class="mainBox">
-                            <div class="MainImg">
-                                <img src="https://www.cinntra.com/add/SAP/images/WebPortal.jpg" alt="Web Portal">
-                            </div>
-                            <div class="Content">
-                                <h5 style="color: #f76a0e;">Web Portal</h5>
-                                <p>Specialized in engineering the B2B or B2C portal. So the companies can accelerate the
-                                    business' reachability by extending it to the web.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
-                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-                        aria-label="Go to slide 1" aria-current="true"></span><span class="swiper-pagination-bullet"
-                        tabindex="0" role="button" aria-label="Go to slide 2"></span><span
-                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                        aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0"
-                        role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet"
-                        tabindex="0" role="button" aria-label="Go to slide 5"></span><span
-                        class="swiper-pagination-bullet" tabindex="0" role="button"
-                        aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0"
-                        role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet"
-                        tabindex="0" role="button" aria-label="Go to slide 8"></span>
-                </div>
-                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-            </div>
-        </div>
-    </section> -->
-
+    
     <!-- Trust -->
     <section class="NetSuiteImplementationThree" id="NetSuiteImplementationThree">
         <div class="container">
@@ -1156,155 +968,7 @@
         </div>
     </section>
 
-    <!-- infrastructure -->
-    <!-- <section class="NetSuiteImplementationFour" id="NetSuiteImplementationFour">
-        <div class="container">
-            <div class="TItleHEre">
-                <h4>SAP Infrastructure</h4>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/financial-management.png"
-                                alt="Financial Management">
-                        </div>
-                        <h3>Financial Management</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/customer-management.png"
-                                alt="Sales and Customer Management">
-                        </div>
-                        <h3>Sales and Customer Management</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/inventory-management.png"
-                                alt="Purchasing &amp; Inventory Control">
-                        </div>
-                        <h3>Purchasing &amp; Inventory Control</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/supply-chain-management.png"
-                                alt="Supply Chain Management">
-                        </div>
-                        <h3>Supply Chain Management</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/business-intelligence.png"
-                                alt="Business Intelligence">
-                        </div>
-                        <h3>Business Intelligence</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/analytics.png"
-                                alt="Analytics &amp; Reporting">
-                        </div>
-                        <h3>Analytics &amp; Reporting</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/manufacturing.png" alt="Manufacturing">
-                        </div>
-                        <h3>Manufacturing</h3>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="Fourcontent">
-                        <div class="icon">
-                            <img src="https://www.cinntra.com/add/SAP/images/administration.png" alt="Administration">
-                        </div>
-                        <h3>Administration</h3>
-                    </div>
-                </div>
-                <button><a href="#demo" class="BtnSchedule">Book a Discovery Call</a></button>
-            </div>
-        </div>
-    </section>
-    <section class="CounterSectionHere" id="CounterSectionHere">
-        <div class="container-fluid">
-            <div class="about-counter-title">
-                <h6>Upscale Your Business With Personalized SAP Solutions!</h6>
-                <p>We follow all the industrial compliance to provide customized SAP ERP Solutions.</p>
-            </div>
-            <div class="row justify-content-evenly">
-                <div class="col-lg-2 col-6">
-                    <div class="AllMAnage">
-                        <li class="CounterImage" style="background-color: #F4EFFF;">
-                            <img src="https://www.cinntra.com/assets/image/counter/staff.png" alt="Experts">
-                        </li>
-                        <div class="counter-box colored">
-                            <span class="counter">200</span><span class="counter-plus">+</span>
-                            <p>Experts</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="AllMAnage">
-                        <li class="CounterImage" style="background-color: #F4EFFF;">
-                            <img src="https://www.cinntra.com/assets/image/counter/trophy.png" alt="Implementations">
-                        </li>
-                        <div class="counter-box">
-                            <span class="counter">700</span><span class="counter-plus">+</span>
-                            <p>Implementations</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="AllMAnage">
-                        <li class="CounterImage" style="background-color: #F4EFFF;">
-                            <img src="https://www.cinntra.com/assets/image/counter/analytics.png" alt="12 Add-Ons">
-                        </li>
-                        <div class="counter-box">
-                            <span class="counter">12</span><span class="counter-plus">+</span>
-                            <p>12 Add-Ons</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="AllMAnage">
-                        <li class="CounterImage" style="background-color: #F4EFFF;">
-                            <img src="https://www.cinntra.com/add/SAP/images/24-hours.png" alt="24/7 Support">
-                        </li>
-                        <div class="counter-box">
-                            <span class="counter">24</span><span class="counter-plus"><span
-                                    style="font-size: 34px; line-height: 70px;">/7</span></span>
-                            <p>24/7 Support</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-6">
-                    <div class="AllMAnage">
-                        <li class="CounterImage" style="background-color: #F4EFFF;">
-                            <img src="https://www.cinntra.com/add/SAP/images/years-of-excellence.png"
-                                alt="Years of Excellence">
-                        </li>
-                        <div class="counter-box">
-                            <span class="counter">28</span><span class="counter-plus">+</span>
-                            <p>Years of Excellence</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
+    
     <!-- Testimonial -->
 
     <div class="container__wrapper">
@@ -1930,6 +1594,177 @@
         </div>
     </section>
 
+    <div id="counter" class="counter__container">
+        <div class="counter__box">
+            <p style="color: #f76a0e;">Total Customers</p>
+            <div class="counter__img">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M213.4 521.4c4.4 155.5 131.8 280.2 288.4 280.2 159.3 0 288.5-129.2 288.5-288.5 0-156.2-124.1-283.3-279-288.3v296.6"
+                        fill="#55B7A8" />
+                    <path
+                        d="M416.7 515.6c1.3 45.9 38.9 82.7 85.1 82.7 47 0 85.1-38.1 85.1-85.1 0-46.1-36.6-83.6-82.3-85.1v87.5"
+                        fill="#FFFFFF" />
+                    <path
+                        d="M510.6 960.4c-2.7 0-5.5 0-8.1-0.1l0.3-16c2.6 0 5.2 0.1 7.9 0.1v16zM486.1 959.7c-5.4-0.3-10.9-0.7-16.3-1.2l1.4-15.9c5.2 0.5 10.5 0.9 15.7 1.1l-0.8 16z m-32.5-2.9c-5.4-0.7-10.8-1.5-16.2-2.4l2.6-15.8c5.1 0.8 10.4 1.6 15.6 2.3l-2 15.9z m-32.3-5.3c-5.3-1.1-10.7-2.3-16-3.5l3.7-15.6c5.1 1.2 10.3 2.4 15.4 3.4l-3.1 15.7z m-31.8-7.7c-5.2-1.5-10.5-3-15.7-4.7l4.9-15.2c5 1.6 10.1 3.1 15.1 4.5l-4.3 15.4z m-31.1-10c-5.1-1.8-10.3-3.8-15.3-5.9l6-14.8c4.9 2 9.8 3.9 14.8 5.6l-5.5 15.1zM328 921.6c-5-2.2-9.9-4.6-14.8-7l7.1-14.4c4.7 2.3 9.5 4.6 14.3 6.7l-6.6 14.7z m-29.4-14.5c-4.8-2.6-9.6-5.3-14.3-8l8.1-13.8c4.5 2.6 9.1 5.3 13.8 7.7l-7.6 14.1z m-28.2-16.5c-4.6-2.9-9.2-6-13.6-9l9.1-13.2c4.3 3 8.7 5.9 13.1 8.7l-8.6 13.5zM243.5 872c-4.3-3.2-8.7-6.6-12.9-10l10-12.5c4.1 3.3 8.3 6.5 12.5 9.7l-9.6 12.8zM218 851.5c-4.1-3.6-8.2-7.2-12.2-10.9l10.9-11.7c3.8 3.6 7.8 7.1 11.7 10.5L218 851.5z m-23.9-22.3c-3.8-3.8-7.6-7.8-11.3-11.8l11.7-10.9c3.6 3.8 7.2 7.7 10.9 11.3l-11.3 11.4z m-22.3-23.9c-3.5-4.1-7.1-8.3-10.4-12.6l12.5-10c3.3 4.1 6.7 8.2 10.1 12.1l-12.2 10.5z m-20.4-25.5c-3.2-4.3-6.4-8.8-9.5-13.3l13.2-9.1c3 4.3 6 8.6 9.2 12.8l-12.9 9.6zM132.9 753c-2.9-4.6-5.8-9.3-8.5-13.9l13.8-8.1c2.6 4.5 5.4 9 8.2 13.4l-13.5 8.6z m-16.5-28.2c-2.6-4.8-5.1-9.6-7.5-14.5l14.4-7.1c2.3 4.7 4.7 9.4 7.2 14l-14.1 7.6zM102 695.6c-2.2-4.9-4.4-10-6.4-15l14.8-6c2 4.8 4 9.7 6.2 14.5l-14.6 6.5z m-12.3-30.3c-1.8-5.1-3.6-10.3-5.3-15.5l15.2-4.9c1.6 5 3.3 10 5.1 14.9l-15 5.5z m-9.9-31.1c-1.5-5.2-2.9-10.5-4.1-15.8l15.6-3.8c1.2 5.1 2.6 10.2 4 15.2l-15.5 4.4z m-7.7-31.7c-1.1-5.3-2.1-10.7-3-16.1l15.8-2.6c0.9 5.2 1.8 10.4 2.9 15.5l-15.7 3.2z m-5.3-32.3c-0.7-5.4-1.3-10.8-1.8-16.2l15.9-1.4c0.5 5.2 1 10.5 1.7 15.7l-15.8 1.9z m-3-32.5c-0.3-5.4-0.5-10.9-0.6-16.3l16-0.3c0.1 5.2 0.3 10.5 0.6 15.8l-16 0.8z m15.4-32.4l-16-0.3c0.1-5.4 0.3-10.9 0.6-16.3l16 0.9c-0.3 5.1-0.5 10.4-0.6 15.7z m1.7-31.5L65 472.4c0.5-5.4 1.1-10.9 1.8-16.2l15.9 2c-0.8 5.1-1.4 10.4-1.8 15.6z m3.9-31.2L69 440c0.9-5.4 1.9-10.8 2.9-16.1l15.7 3.2c-1 5.1-1.9 10.3-2.8 15.5z m6.3-30.9L75.5 408c1.3-5.3 2.7-10.6 4.1-15.8l15.4 4.3c-1.4 5-2.7 10.1-3.9 15.2z m8.5-30.4l-15.2-4.9c1.7-5.2 3.4-10.4 5.3-15.5l15 5.4c-1.8 5-3.5 10-5.1 15z m10.7-29.7l-14.8-6c2-5 4.2-10.1 6.4-15.1l14.6 6.5c-2.2 4.9-4.2 9.8-6.2 14.6z m12.9-28.8l-14.4-7.1c2.4-4.9 4.9-9.8 7.5-14.6l14.1 7.6c-2.5 4.7-4.9 9.4-7.2 14.1z m14.9-27.8l-13.8-8.1c2.8-4.7 5.6-9.4 8.5-14l13.5 8.6c-2.7 4.5-5.5 9-8.2 13.5z m17-26.6l-13.2-9.1c3.1-4.5 6.3-8.9 9.5-13.3l12.8 9.6c-3.1 4.2-6.2 8.5-9.1 12.8z m18.8-25.3l-12.5-10c3.4-4.2 6.9-8.5 10.5-12.6L184 231c-3.4 3.9-6.8 8-10.1 12.1z m20.6-23.9l-11.7-10.9c3.7-4 7.5-7.9 11.3-11.8l11.3 11.3c-3.6 3.8-7.3 7.6-10.9 11.4z m22.3-22.2l-10.9-11.7c4-3.7 8.1-7.4 12.2-10.9l10.5 12.1c-4 3.4-8 6.9-11.8 10.5z m23.8-20.6l-10-12.5c4.2-3.4 8.6-6.8 12.9-10l9.6 12.8c-4.2 3.1-8.4 6.4-12.5 9.7z m25.3-18.9l-9.1-13.2c4.5-3.1 9-6.1 13.6-9l8.6 13.5c-4.4 2.9-8.8 5.8-13.1 8.7z m26.5-16.9l-8.1-13.8c4.7-2.7 9.5-5.4 14.2-8l7.6 14.1c-4.6 2.5-9.2 5.1-13.7 7.7z m27.7-14.9l-7.1-14.4c4.8-2.4 9.8-4.7 14.8-6.9l6.5 14.6c-4.7 2.2-9.5 4.4-14.2 6.7z m28.7-12.8l-6-14.8c5-2 10.2-4 15.3-5.9l5.5 15c-5 1.8-10 3.7-14.8 5.7z m29.6-10.8l-4.9-15.2c5.2-1.7 10.4-3.2 15.6-4.7l4.3 15.4c-5 1.4-10 2.9-15 4.5z m30.3-8.5L405 78c5.3-1.3 10.6-2.5 16-3.6l3.2 15.7c-5.2 1.1-10.4 2.3-15.5 3.5z m30.9-6.3L437 71.5c5.3-0.9 10.8-1.7 16.2-2.4l2 15.9c-5.2 0.7-10.4 1.5-15.6 2.3z m31.3-4l-1.5-15.9c5.4-0.5 10.9-0.9 16.3-1.2l0.9 16c-5.3 0.2-10.5 0.6-15.7 1.1zM502.7 81.6l-0.3-16c2.7 0 5.4-0.1 8.1-0.1v16c-2.5 0-5.2 0-7.8 0.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 960.4v-16c58.2 0 114.8-11.4 167.9-33.9 51.4-21.7 97.5-52.8 137.1-92.5 39.6-39.6 70.7-85.8 92.5-137.1C930.6 627.7 942 571.2 942 513s-11.4-114.8-33.9-168c-21.7-51.4-52.8-97.5-92.5-137.1-39.6-39.6-85.8-70.7-137.1-92.5-53.2-22.5-109.7-33.9-167.9-33.9v-16c60.4 0 119 11.8 174.2 35.2 53.3 22.5 101.1 54.8 142.2 95.9s73.4 88.9 95.9 142.2C946.2 393.9 958 452.5 958 513c0 60.4-11.8 119-35.2 174.2-22.5 53.3-54.8 101.1-95.9 142.2s-88.9 73.4-142.2 95.9c-55.1 23.3-113.7 35.1-174.1 35.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 879c-49.4 0-97.3-9.7-142.4-28.8-43.6-18.4-82.7-44.8-116.3-78.4-33.6-33.6-60-72.7-78.4-116.3-19.1-45.1-28.8-93-28.8-142.4h16c0 93.4 36.4 181.3 102.5 247.3C329.3 826.6 417.1 863 510.6 863s181.3-36.4 247.3-102.5 102.5-153.9 102.5-247.3S824 331.9 757.9 265.8C693.7 201.7 609 165.5 518.6 163.5v366.3h-16V147.4h8c49.4 0 97.3 9.7 142.4 28.8 43.6 18.4 82.7 44.8 116.3 78.4 33.6 33.6 60 72.7 78.4 116.3 19.1 45.1 28.8 93 28.8 142.4 0 49.4-9.7 97.3-28.8 142.4-18.4 43.6-44.8 82.7-78.4 116.3-33.6 33.6-72.7 60-116.3 78.4-45.1 18.9-93 28.6-142.4 28.6z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 973h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 981h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46.1c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 96.5h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 104.5h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M481.1 528.9h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z"
+                        fill="#0A0408" />
+                </svg>
+            </div>
+            <div class="counter__text">
+                <p class="counter-value" data-count="200">0</p>
+                <p style="color: #f76a0e;">+</p>
+            </div>
+        </div>
+        <div class="counter__box">
+            <p style="color: #f76a0e;">Solar Installed</p>
+            <div class="counter__img">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M213.4 521.4c4.4 155.5 131.8 280.2 288.4 280.2 159.3 0 288.5-129.2 288.5-288.5 0-156.2-124.1-283.3-279-288.3v296.6"
+                        fill="#55B7A8" />
+                    <path
+                        d="M416.7 515.6c1.3 45.9 38.9 82.7 85.1 82.7 47 0 85.1-38.1 85.1-85.1 0-46.1-36.6-83.6-82.3-85.1v87.5"
+                        fill="#FFFFFF" />
+                    <path
+                        d="M510.6 960.4c-2.7 0-5.5 0-8.1-0.1l0.3-16c2.6 0 5.2 0.1 7.9 0.1v16zM486.1 959.7c-5.4-0.3-10.9-0.7-16.3-1.2l1.4-15.9c5.2 0.5 10.5 0.9 15.7 1.1l-0.8 16z m-32.5-2.9c-5.4-0.7-10.8-1.5-16.2-2.4l2.6-15.8c5.1 0.8 10.4 1.6 15.6 2.3l-2 15.9z m-32.3-5.3c-5.3-1.1-10.7-2.3-16-3.5l3.7-15.6c5.1 1.2 10.3 2.4 15.4 3.4l-3.1 15.7z m-31.8-7.7c-5.2-1.5-10.5-3-15.7-4.7l4.9-15.2c5 1.6 10.1 3.1 15.1 4.5l-4.3 15.4z m-31.1-10c-5.1-1.8-10.3-3.8-15.3-5.9l6-14.8c4.9 2 9.8 3.9 14.8 5.6l-5.5 15.1zM328 921.6c-5-2.2-9.9-4.6-14.8-7l7.1-14.4c4.7 2.3 9.5 4.6 14.3 6.7l-6.6 14.7z m-29.4-14.5c-4.8-2.6-9.6-5.3-14.3-8l8.1-13.8c4.5 2.6 9.1 5.3 13.8 7.7l-7.6 14.1z m-28.2-16.5c-4.6-2.9-9.2-6-13.6-9l9.1-13.2c4.3 3 8.7 5.9 13.1 8.7l-8.6 13.5zM243.5 872c-4.3-3.2-8.7-6.6-12.9-10l10-12.5c4.1 3.3 8.3 6.5 12.5 9.7l-9.6 12.8zM218 851.5c-4.1-3.6-8.2-7.2-12.2-10.9l10.9-11.7c3.8 3.6 7.8 7.1 11.7 10.5L218 851.5z m-23.9-22.3c-3.8-3.8-7.6-7.8-11.3-11.8l11.7-10.9c3.6 3.8 7.2 7.7 10.9 11.3l-11.3 11.4z m-22.3-23.9c-3.5-4.1-7.1-8.3-10.4-12.6l12.5-10c3.3 4.1 6.7 8.2 10.1 12.1l-12.2 10.5z m-20.4-25.5c-3.2-4.3-6.4-8.8-9.5-13.3l13.2-9.1c3 4.3 6 8.6 9.2 12.8l-12.9 9.6zM132.9 753c-2.9-4.6-5.8-9.3-8.5-13.9l13.8-8.1c2.6 4.5 5.4 9 8.2 13.4l-13.5 8.6z m-16.5-28.2c-2.6-4.8-5.1-9.6-7.5-14.5l14.4-7.1c2.3 4.7 4.7 9.4 7.2 14l-14.1 7.6zM102 695.6c-2.2-4.9-4.4-10-6.4-15l14.8-6c2 4.8 4 9.7 6.2 14.5l-14.6 6.5z m-12.3-30.3c-1.8-5.1-3.6-10.3-5.3-15.5l15.2-4.9c1.6 5 3.3 10 5.1 14.9l-15 5.5z m-9.9-31.1c-1.5-5.2-2.9-10.5-4.1-15.8l15.6-3.8c1.2 5.1 2.6 10.2 4 15.2l-15.5 4.4z m-7.7-31.7c-1.1-5.3-2.1-10.7-3-16.1l15.8-2.6c0.9 5.2 1.8 10.4 2.9 15.5l-15.7 3.2z m-5.3-32.3c-0.7-5.4-1.3-10.8-1.8-16.2l15.9-1.4c0.5 5.2 1 10.5 1.7 15.7l-15.8 1.9z m-3-32.5c-0.3-5.4-0.5-10.9-0.6-16.3l16-0.3c0.1 5.2 0.3 10.5 0.6 15.8l-16 0.8z m15.4-32.4l-16-0.3c0.1-5.4 0.3-10.9 0.6-16.3l16 0.9c-0.3 5.1-0.5 10.4-0.6 15.7z m1.7-31.5L65 472.4c0.5-5.4 1.1-10.9 1.8-16.2l15.9 2c-0.8 5.1-1.4 10.4-1.8 15.6z m3.9-31.2L69 440c0.9-5.4 1.9-10.8 2.9-16.1l15.7 3.2c-1 5.1-1.9 10.3-2.8 15.5z m6.3-30.9L75.5 408c1.3-5.3 2.7-10.6 4.1-15.8l15.4 4.3c-1.4 5-2.7 10.1-3.9 15.2z m8.5-30.4l-15.2-4.9c1.7-5.2 3.4-10.4 5.3-15.5l15 5.4c-1.8 5-3.5 10-5.1 15z m10.7-29.7l-14.8-6c2-5 4.2-10.1 6.4-15.1l14.6 6.5c-2.2 4.9-4.2 9.8-6.2 14.6z m12.9-28.8l-14.4-7.1c2.4-4.9 4.9-9.8 7.5-14.6l14.1 7.6c-2.5 4.7-4.9 9.4-7.2 14.1z m14.9-27.8l-13.8-8.1c2.8-4.7 5.6-9.4 8.5-14l13.5 8.6c-2.7 4.5-5.5 9-8.2 13.5z m17-26.6l-13.2-9.1c3.1-4.5 6.3-8.9 9.5-13.3l12.8 9.6c-3.1 4.2-6.2 8.5-9.1 12.8z m18.8-25.3l-12.5-10c3.4-4.2 6.9-8.5 10.5-12.6L184 231c-3.4 3.9-6.8 8-10.1 12.1z m20.6-23.9l-11.7-10.9c3.7-4 7.5-7.9 11.3-11.8l11.3 11.3c-3.6 3.8-7.3 7.6-10.9 11.4z m22.3-22.2l-10.9-11.7c4-3.7 8.1-7.4 12.2-10.9l10.5 12.1c-4 3.4-8 6.9-11.8 10.5z m23.8-20.6l-10-12.5c4.2-3.4 8.6-6.8 12.9-10l9.6 12.8c-4.2 3.1-8.4 6.4-12.5 9.7z m25.3-18.9l-9.1-13.2c4.5-3.1 9-6.1 13.6-9l8.6 13.5c-4.4 2.9-8.8 5.8-13.1 8.7z m26.5-16.9l-8.1-13.8c4.7-2.7 9.5-5.4 14.2-8l7.6 14.1c-4.6 2.5-9.2 5.1-13.7 7.7z m27.7-14.9l-7.1-14.4c4.8-2.4 9.8-4.7 14.8-6.9l6.5 14.6c-4.7 2.2-9.5 4.4-14.2 6.7z m28.7-12.8l-6-14.8c5-2 10.2-4 15.3-5.9l5.5 15c-5 1.8-10 3.7-14.8 5.7z m29.6-10.8l-4.9-15.2c5.2-1.7 10.4-3.2 15.6-4.7l4.3 15.4c-5 1.4-10 2.9-15 4.5z m30.3-8.5L405 78c5.3-1.3 10.6-2.5 16-3.6l3.2 15.7c-5.2 1.1-10.4 2.3-15.5 3.5z m30.9-6.3L437 71.5c5.3-0.9 10.8-1.7 16.2-2.4l2 15.9c-5.2 0.7-10.4 1.5-15.6 2.3z m31.3-4l-1.5-15.9c5.4-0.5 10.9-0.9 16.3-1.2l0.9 16c-5.3 0.2-10.5 0.6-15.7 1.1zM502.7 81.6l-0.3-16c2.7 0 5.4-0.1 8.1-0.1v16c-2.5 0-5.2 0-7.8 0.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 960.4v-16c58.2 0 114.8-11.4 167.9-33.9 51.4-21.7 97.5-52.8 137.1-92.5 39.6-39.6 70.7-85.8 92.5-137.1C930.6 627.7 942 571.2 942 513s-11.4-114.8-33.9-168c-21.7-51.4-52.8-97.5-92.5-137.1-39.6-39.6-85.8-70.7-137.1-92.5-53.2-22.5-109.7-33.9-167.9-33.9v-16c60.4 0 119 11.8 174.2 35.2 53.3 22.5 101.1 54.8 142.2 95.9s73.4 88.9 95.9 142.2C946.2 393.9 958 452.5 958 513c0 60.4-11.8 119-35.2 174.2-22.5 53.3-54.8 101.1-95.9 142.2s-88.9 73.4-142.2 95.9c-55.1 23.3-113.7 35.1-174.1 35.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 879c-49.4 0-97.3-9.7-142.4-28.8-43.6-18.4-82.7-44.8-116.3-78.4-33.6-33.6-60-72.7-78.4-116.3-19.1-45.1-28.8-93-28.8-142.4h16c0 93.4 36.4 181.3 102.5 247.3C329.3 826.6 417.1 863 510.6 863s181.3-36.4 247.3-102.5 102.5-153.9 102.5-247.3S824 331.9 757.9 265.8C693.7 201.7 609 165.5 518.6 163.5v366.3h-16V147.4h8c49.4 0 97.3 9.7 142.4 28.8 43.6 18.4 82.7 44.8 116.3 78.4 33.6 33.6 60 72.7 78.4 116.3 19.1 45.1 28.8 93 28.8 142.4 0 49.4-9.7 97.3-28.8 142.4-18.4 43.6-44.8 82.7-78.4 116.3-33.6 33.6-72.7 60-116.3 78.4-45.1 18.9-93 28.6-142.4 28.6z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 973h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 981h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46.1c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 96.5h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 104.5h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M481.1 528.9h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z"
+                        fill="#0A0408" />
+                </svg>
+            </div>
+            <div class="counter__text">
+                <p class="counter-value" data-count="400">0</p>
+                <p style="font-weight: 900;font-size: 1.4rem;color: #f76a0e;">+</p>
+            </div>
+        </div>
+        <div class="counter__box">
+            <p style="color: #f76a0e;">Service Provide</p>
+            <div class="counter__img">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M213.4 521.4c4.4 155.5 131.8 280.2 288.4 280.2 159.3 0 288.5-129.2 288.5-288.5 0-156.2-124.1-283.3-279-288.3v296.6"
+                        fill="#55B7A8" />
+                    <path
+                        d="M416.7 515.6c1.3 45.9 38.9 82.7 85.1 82.7 47 0 85.1-38.1 85.1-85.1 0-46.1-36.6-83.6-82.3-85.1v87.5"
+                        fill="#FFFFFF" />
+                    <path
+                        d="M510.6 960.4c-2.7 0-5.5 0-8.1-0.1l0.3-16c2.6 0 5.2 0.1 7.9 0.1v16zM486.1 959.7c-5.4-0.3-10.9-0.7-16.3-1.2l1.4-15.9c5.2 0.5 10.5 0.9 15.7 1.1l-0.8 16z m-32.5-2.9c-5.4-0.7-10.8-1.5-16.2-2.4l2.6-15.8c5.1 0.8 10.4 1.6 15.6 2.3l-2 15.9z m-32.3-5.3c-5.3-1.1-10.7-2.3-16-3.5l3.7-15.6c5.1 1.2 10.3 2.4 15.4 3.4l-3.1 15.7z m-31.8-7.7c-5.2-1.5-10.5-3-15.7-4.7l4.9-15.2c5 1.6 10.1 3.1 15.1 4.5l-4.3 15.4z m-31.1-10c-5.1-1.8-10.3-3.8-15.3-5.9l6-14.8c4.9 2 9.8 3.9 14.8 5.6l-5.5 15.1zM328 921.6c-5-2.2-9.9-4.6-14.8-7l7.1-14.4c4.7 2.3 9.5 4.6 14.3 6.7l-6.6 14.7z m-29.4-14.5c-4.8-2.6-9.6-5.3-14.3-8l8.1-13.8c4.5 2.6 9.1 5.3 13.8 7.7l-7.6 14.1z m-28.2-16.5c-4.6-2.9-9.2-6-13.6-9l9.1-13.2c4.3 3 8.7 5.9 13.1 8.7l-8.6 13.5zM243.5 872c-4.3-3.2-8.7-6.6-12.9-10l10-12.5c4.1 3.3 8.3 6.5 12.5 9.7l-9.6 12.8zM218 851.5c-4.1-3.6-8.2-7.2-12.2-10.9l10.9-11.7c3.8 3.6 7.8 7.1 11.7 10.5L218 851.5z m-23.9-22.3c-3.8-3.8-7.6-7.8-11.3-11.8l11.7-10.9c3.6 3.8 7.2 7.7 10.9 11.3l-11.3 11.4z m-22.3-23.9c-3.5-4.1-7.1-8.3-10.4-12.6l12.5-10c3.3 4.1 6.7 8.2 10.1 12.1l-12.2 10.5z m-20.4-25.5c-3.2-4.3-6.4-8.8-9.5-13.3l13.2-9.1c3 4.3 6 8.6 9.2 12.8l-12.9 9.6zM132.9 753c-2.9-4.6-5.8-9.3-8.5-13.9l13.8-8.1c2.6 4.5 5.4 9 8.2 13.4l-13.5 8.6z m-16.5-28.2c-2.6-4.8-5.1-9.6-7.5-14.5l14.4-7.1c2.3 4.7 4.7 9.4 7.2 14l-14.1 7.6zM102 695.6c-2.2-4.9-4.4-10-6.4-15l14.8-6c2 4.8 4 9.7 6.2 14.5l-14.6 6.5z m-12.3-30.3c-1.8-5.1-3.6-10.3-5.3-15.5l15.2-4.9c1.6 5 3.3 10 5.1 14.9l-15 5.5z m-9.9-31.1c-1.5-5.2-2.9-10.5-4.1-15.8l15.6-3.8c1.2 5.1 2.6 10.2 4 15.2l-15.5 4.4z m-7.7-31.7c-1.1-5.3-2.1-10.7-3-16.1l15.8-2.6c0.9 5.2 1.8 10.4 2.9 15.5l-15.7 3.2z m-5.3-32.3c-0.7-5.4-1.3-10.8-1.8-16.2l15.9-1.4c0.5 5.2 1 10.5 1.7 15.7l-15.8 1.9z m-3-32.5c-0.3-5.4-0.5-10.9-0.6-16.3l16-0.3c0.1 5.2 0.3 10.5 0.6 15.8l-16 0.8z m15.4-32.4l-16-0.3c0.1-5.4 0.3-10.9 0.6-16.3l16 0.9c-0.3 5.1-0.5 10.4-0.6 15.7z m1.7-31.5L65 472.4c0.5-5.4 1.1-10.9 1.8-16.2l15.9 2c-0.8 5.1-1.4 10.4-1.8 15.6z m3.9-31.2L69 440c0.9-5.4 1.9-10.8 2.9-16.1l15.7 3.2c-1 5.1-1.9 10.3-2.8 15.5z m6.3-30.9L75.5 408c1.3-5.3 2.7-10.6 4.1-15.8l15.4 4.3c-1.4 5-2.7 10.1-3.9 15.2z m8.5-30.4l-15.2-4.9c1.7-5.2 3.4-10.4 5.3-15.5l15 5.4c-1.8 5-3.5 10-5.1 15z m10.7-29.7l-14.8-6c2-5 4.2-10.1 6.4-15.1l14.6 6.5c-2.2 4.9-4.2 9.8-6.2 14.6z m12.9-28.8l-14.4-7.1c2.4-4.9 4.9-9.8 7.5-14.6l14.1 7.6c-2.5 4.7-4.9 9.4-7.2 14.1z m14.9-27.8l-13.8-8.1c2.8-4.7 5.6-9.4 8.5-14l13.5 8.6c-2.7 4.5-5.5 9-8.2 13.5z m17-26.6l-13.2-9.1c3.1-4.5 6.3-8.9 9.5-13.3l12.8 9.6c-3.1 4.2-6.2 8.5-9.1 12.8z m18.8-25.3l-12.5-10c3.4-4.2 6.9-8.5 10.5-12.6L184 231c-3.4 3.9-6.8 8-10.1 12.1z m20.6-23.9l-11.7-10.9c3.7-4 7.5-7.9 11.3-11.8l11.3 11.3c-3.6 3.8-7.3 7.6-10.9 11.4z m22.3-22.2l-10.9-11.7c4-3.7 8.1-7.4 12.2-10.9l10.5 12.1c-4 3.4-8 6.9-11.8 10.5z m23.8-20.6l-10-12.5c4.2-3.4 8.6-6.8 12.9-10l9.6 12.8c-4.2 3.1-8.4 6.4-12.5 9.7z m25.3-18.9l-9.1-13.2c4.5-3.1 9-6.1 13.6-9l8.6 13.5c-4.4 2.9-8.8 5.8-13.1 8.7z m26.5-16.9l-8.1-13.8c4.7-2.7 9.5-5.4 14.2-8l7.6 14.1c-4.6 2.5-9.2 5.1-13.7 7.7z m27.7-14.9l-7.1-14.4c4.8-2.4 9.8-4.7 14.8-6.9l6.5 14.6c-4.7 2.2-9.5 4.4-14.2 6.7z m28.7-12.8l-6-14.8c5-2 10.2-4 15.3-5.9l5.5 15c-5 1.8-10 3.7-14.8 5.7z m29.6-10.8l-4.9-15.2c5.2-1.7 10.4-3.2 15.6-4.7l4.3 15.4c-5 1.4-10 2.9-15 4.5z m30.3-8.5L405 78c5.3-1.3 10.6-2.5 16-3.6l3.2 15.7c-5.2 1.1-10.4 2.3-15.5 3.5z m30.9-6.3L437 71.5c5.3-0.9 10.8-1.7 16.2-2.4l2 15.9c-5.2 0.7-10.4 1.5-15.6 2.3z m31.3-4l-1.5-15.9c5.4-0.5 10.9-0.9 16.3-1.2l0.9 16c-5.3 0.2-10.5 0.6-15.7 1.1zM502.7 81.6l-0.3-16c2.7 0 5.4-0.1 8.1-0.1v16c-2.5 0-5.2 0-7.8 0.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 960.4v-16c58.2 0 114.8-11.4 167.9-33.9 51.4-21.7 97.5-52.8 137.1-92.5 39.6-39.6 70.7-85.8 92.5-137.1C930.6 627.7 942 571.2 942 513s-11.4-114.8-33.9-168c-21.7-51.4-52.8-97.5-92.5-137.1-39.6-39.6-85.8-70.7-137.1-92.5-53.2-22.5-109.7-33.9-167.9-33.9v-16c60.4 0 119 11.8 174.2 35.2 53.3 22.5 101.1 54.8 142.2 95.9s73.4 88.9 95.9 142.2C946.2 393.9 958 452.5 958 513c0 60.4-11.8 119-35.2 174.2-22.5 53.3-54.8 101.1-95.9 142.2s-88.9 73.4-142.2 95.9c-55.1 23.3-113.7 35.1-174.1 35.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 879c-49.4 0-97.3-9.7-142.4-28.8-43.6-18.4-82.7-44.8-116.3-78.4-33.6-33.6-60-72.7-78.4-116.3-19.1-45.1-28.8-93-28.8-142.4h16c0 93.4 36.4 181.3 102.5 247.3C329.3 826.6 417.1 863 510.6 863s181.3-36.4 247.3-102.5 102.5-153.9 102.5-247.3S824 331.9 757.9 265.8C693.7 201.7 609 165.5 518.6 163.5v366.3h-16V147.4h8c49.4 0 97.3 9.7 142.4 28.8 43.6 18.4 82.7 44.8 116.3 78.4 33.6 33.6 60 72.7 78.4 116.3 19.1 45.1 28.8 93 28.8 142.4 0 49.4-9.7 97.3-28.8 142.4-18.4 43.6-44.8 82.7-78.4 116.3-33.6 33.6-72.7 60-116.3 78.4-45.1 18.9-93 28.6-142.4 28.6z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 973h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 981h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46.1c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 96.5h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 104.5h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M481.1 528.9h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z"
+                        fill="#0A0408" />
+                </svg>
+            </div>
+            <div class="counter__text">
+                <p class="counter-value" data-count="600">0</p>
+                <p style="font-weight: 900;font-size: 1.4rem;color: #f76a0e;">+</p>
+            </div>
+        </div>
+        <div class="counter__box">
+            <p style="color: #f76a0e;">Total Customers</p>
+            <div class="counter__img">
+                <?xml version="1.0" encoding="utf-8"?>
+                <svg viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M213.4 521.4c4.4 155.5 131.8 280.2 288.4 280.2 159.3 0 288.5-129.2 288.5-288.5 0-156.2-124.1-283.3-279-288.3v296.6"
+                        fill="#55B7A8" />
+                    <path
+                        d="M416.7 515.6c1.3 45.9 38.9 82.7 85.1 82.7 47 0 85.1-38.1 85.1-85.1 0-46.1-36.6-83.6-82.3-85.1v87.5"
+                        fill="#FFFFFF" />
+                    <path
+                        d="M510.6 960.4c-2.7 0-5.5 0-8.1-0.1l0.3-16c2.6 0 5.2 0.1 7.9 0.1v16zM486.1 959.7c-5.4-0.3-10.9-0.7-16.3-1.2l1.4-15.9c5.2 0.5 10.5 0.9 15.7 1.1l-0.8 16z m-32.5-2.9c-5.4-0.7-10.8-1.5-16.2-2.4l2.6-15.8c5.1 0.8 10.4 1.6 15.6 2.3l-2 15.9z m-32.3-5.3c-5.3-1.1-10.7-2.3-16-3.5l3.7-15.6c5.1 1.2 10.3 2.4 15.4 3.4l-3.1 15.7z m-31.8-7.7c-5.2-1.5-10.5-3-15.7-4.7l4.9-15.2c5 1.6 10.1 3.1 15.1 4.5l-4.3 15.4z m-31.1-10c-5.1-1.8-10.3-3.8-15.3-5.9l6-14.8c4.9 2 9.8 3.9 14.8 5.6l-5.5 15.1zM328 921.6c-5-2.2-9.9-4.6-14.8-7l7.1-14.4c4.7 2.3 9.5 4.6 14.3 6.7l-6.6 14.7z m-29.4-14.5c-4.8-2.6-9.6-5.3-14.3-8l8.1-13.8c4.5 2.6 9.1 5.3 13.8 7.7l-7.6 14.1z m-28.2-16.5c-4.6-2.9-9.2-6-13.6-9l9.1-13.2c4.3 3 8.7 5.9 13.1 8.7l-8.6 13.5zM243.5 872c-4.3-3.2-8.7-6.6-12.9-10l10-12.5c4.1 3.3 8.3 6.5 12.5 9.7l-9.6 12.8zM218 851.5c-4.1-3.6-8.2-7.2-12.2-10.9l10.9-11.7c3.8 3.6 7.8 7.1 11.7 10.5L218 851.5z m-23.9-22.3c-3.8-3.8-7.6-7.8-11.3-11.8l11.7-10.9c3.6 3.8 7.2 7.7 10.9 11.3l-11.3 11.4z m-22.3-23.9c-3.5-4.1-7.1-8.3-10.4-12.6l12.5-10c3.3 4.1 6.7 8.2 10.1 12.1l-12.2 10.5z m-20.4-25.5c-3.2-4.3-6.4-8.8-9.5-13.3l13.2-9.1c3 4.3 6 8.6 9.2 12.8l-12.9 9.6zM132.9 753c-2.9-4.6-5.8-9.3-8.5-13.9l13.8-8.1c2.6 4.5 5.4 9 8.2 13.4l-13.5 8.6z m-16.5-28.2c-2.6-4.8-5.1-9.6-7.5-14.5l14.4-7.1c2.3 4.7 4.7 9.4 7.2 14l-14.1 7.6zM102 695.6c-2.2-4.9-4.4-10-6.4-15l14.8-6c2 4.8 4 9.7 6.2 14.5l-14.6 6.5z m-12.3-30.3c-1.8-5.1-3.6-10.3-5.3-15.5l15.2-4.9c1.6 5 3.3 10 5.1 14.9l-15 5.5z m-9.9-31.1c-1.5-5.2-2.9-10.5-4.1-15.8l15.6-3.8c1.2 5.1 2.6 10.2 4 15.2l-15.5 4.4z m-7.7-31.7c-1.1-5.3-2.1-10.7-3-16.1l15.8-2.6c0.9 5.2 1.8 10.4 2.9 15.5l-15.7 3.2z m-5.3-32.3c-0.7-5.4-1.3-10.8-1.8-16.2l15.9-1.4c0.5 5.2 1 10.5 1.7 15.7l-15.8 1.9z m-3-32.5c-0.3-5.4-0.5-10.9-0.6-16.3l16-0.3c0.1 5.2 0.3 10.5 0.6 15.8l-16 0.8z m15.4-32.4l-16-0.3c0.1-5.4 0.3-10.9 0.6-16.3l16 0.9c-0.3 5.1-0.5 10.4-0.6 15.7z m1.7-31.5L65 472.4c0.5-5.4 1.1-10.9 1.8-16.2l15.9 2c-0.8 5.1-1.4 10.4-1.8 15.6z m3.9-31.2L69 440c0.9-5.4 1.9-10.8 2.9-16.1l15.7 3.2c-1 5.1-1.9 10.3-2.8 15.5z m6.3-30.9L75.5 408c1.3-5.3 2.7-10.6 4.1-15.8l15.4 4.3c-1.4 5-2.7 10.1-3.9 15.2z m8.5-30.4l-15.2-4.9c1.7-5.2 3.4-10.4 5.3-15.5l15 5.4c-1.8 5-3.5 10-5.1 15z m10.7-29.7l-14.8-6c2-5 4.2-10.1 6.4-15.1l14.6 6.5c-2.2 4.9-4.2 9.8-6.2 14.6z m12.9-28.8l-14.4-7.1c2.4-4.9 4.9-9.8 7.5-14.6l14.1 7.6c-2.5 4.7-4.9 9.4-7.2 14.1z m14.9-27.8l-13.8-8.1c2.8-4.7 5.6-9.4 8.5-14l13.5 8.6c-2.7 4.5-5.5 9-8.2 13.5z m17-26.6l-13.2-9.1c3.1-4.5 6.3-8.9 9.5-13.3l12.8 9.6c-3.1 4.2-6.2 8.5-9.1 12.8z m18.8-25.3l-12.5-10c3.4-4.2 6.9-8.5 10.5-12.6L184 231c-3.4 3.9-6.8 8-10.1 12.1z m20.6-23.9l-11.7-10.9c3.7-4 7.5-7.9 11.3-11.8l11.3 11.3c-3.6 3.8-7.3 7.6-10.9 11.4z m22.3-22.2l-10.9-11.7c4-3.7 8.1-7.4 12.2-10.9l10.5 12.1c-4 3.4-8 6.9-11.8 10.5z m23.8-20.6l-10-12.5c4.2-3.4 8.6-6.8 12.9-10l9.6 12.8c-4.2 3.1-8.4 6.4-12.5 9.7z m25.3-18.9l-9.1-13.2c4.5-3.1 9-6.1 13.6-9l8.6 13.5c-4.4 2.9-8.8 5.8-13.1 8.7z m26.5-16.9l-8.1-13.8c4.7-2.7 9.5-5.4 14.2-8l7.6 14.1c-4.6 2.5-9.2 5.1-13.7 7.7z m27.7-14.9l-7.1-14.4c4.8-2.4 9.8-4.7 14.8-6.9l6.5 14.6c-4.7 2.2-9.5 4.4-14.2 6.7z m28.7-12.8l-6-14.8c5-2 10.2-4 15.3-5.9l5.5 15c-5 1.8-10 3.7-14.8 5.7z m29.6-10.8l-4.9-15.2c5.2-1.7 10.4-3.2 15.6-4.7l4.3 15.4c-5 1.4-10 2.9-15 4.5z m30.3-8.5L405 78c5.3-1.3 10.6-2.5 16-3.6l3.2 15.7c-5.2 1.1-10.4 2.3-15.5 3.5z m30.9-6.3L437 71.5c5.3-0.9 10.8-1.7 16.2-2.4l2 15.9c-5.2 0.7-10.4 1.5-15.6 2.3z m31.3-4l-1.5-15.9c5.4-0.5 10.9-0.9 16.3-1.2l0.9 16c-5.3 0.2-10.5 0.6-15.7 1.1zM502.7 81.6l-0.3-16c2.7 0 5.4-0.1 8.1-0.1v16c-2.5 0-5.2 0-7.8 0.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 960.4v-16c58.2 0 114.8-11.4 167.9-33.9 51.4-21.7 97.5-52.8 137.1-92.5 39.6-39.6 70.7-85.8 92.5-137.1C930.6 627.7 942 571.2 942 513s-11.4-114.8-33.9-168c-21.7-51.4-52.8-97.5-92.5-137.1-39.6-39.6-85.8-70.7-137.1-92.5-53.2-22.5-109.7-33.9-167.9-33.9v-16c60.4 0 119 11.8 174.2 35.2 53.3 22.5 101.1 54.8 142.2 95.9s73.4 88.9 95.9 142.2C946.2 393.9 958 452.5 958 513c0 60.4-11.8 119-35.2 174.2-22.5 53.3-54.8 101.1-95.9 142.2s-88.9 73.4-142.2 95.9c-55.1 23.3-113.7 35.1-174.1 35.1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M510.6 879c-49.4 0-97.3-9.7-142.4-28.8-43.6-18.4-82.7-44.8-116.3-78.4-33.6-33.6-60-72.7-78.4-116.3-19.1-45.1-28.8-93-28.8-142.4h16c0 93.4 36.4 181.3 102.5 247.3C329.3 826.6 417.1 863 510.6 863s181.3-36.4 247.3-102.5 102.5-153.9 102.5-247.3S824 331.9 757.9 265.8C693.7 201.7 609 165.5 518.6 163.5v366.3h-16V147.4h8c49.4 0 97.3 9.7 142.4 28.8 43.6 18.4 82.7 44.8 116.3 78.4 33.6 33.6 60 72.7 78.4 116.3 19.1 45.1 28.8 93 28.8 142.4 0 49.4-9.7 97.3-28.8 142.4-18.4 43.6-44.8 82.7-78.4 116.3-33.6 33.6-72.7 60-116.3 78.4-45.1 18.9-93 28.6-142.4 28.6z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 973h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 981h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46.1c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M514 96.5h-1c-12.5 0-22.6-10.1-22.6-22.6v-1c0-12.5 10.1-22.6 22.6-22.6h1c12.5 0 22.6 10.1 22.6 22.6v1c0 12.5-10.1 22.6-22.6 22.6z"
+                        fill="#DC444A" />
+                    <path
+                        d="M514 104.5h-1c-16.8 0-30.6-13.7-30.6-30.6v-1c0-16.8 13.7-30.6 30.6-30.6h1c16.8 0 30.6 13.7 30.6 30.6v1c0 16.9-13.7 30.6-30.6 30.6z m-0.9-46c-8 0-14.6 6.5-14.6 14.6v1c0 8 6.5 14.6 14.6 14.6h1c8 0 14.6-6.5 14.6-14.6v-1c0-8-6.5-14.6-14.6-14.6h-1z"
+                        fill="#0A0408" />
+                    <path
+                        d="M481.1 528.9h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z m-32 0h-16v-16h16v16z"
+                        fill="#0A0408" />
+                </svg>
+            </div>
+            <div class="counter__text">
+                <p class="counter-value" data-count="800">0</p>
+                <p style="font-weight: 900;font-size: 1.4rem;color: #f76a0e;">+</p>
+            </div>
+        </div>
+    </div>
+
     <!-- faq -->
     <section id="ProfessionalNetSuiteSupport" class="ProfessionalNetSuiteSupport" style="background-color: #F5F6F7;">
         <div class="container widthMinimize">
@@ -2179,6 +2014,44 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://www.cinntra.com/add/SAP/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    var a = 0;
+    $(window).scroll(function () {
+
+        var oTop = $('#counter').offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+            $('.counter-value').each(function () {
+                var $this = $(this),
+                    countTo = $this.attr('data-count');
+                $({
+                    countNum: $this.text()
+                }).animate({
+                    countNum: countTo
+                },
+
+                    {
+
+                        duration: 2000,
+                        easing: 'swing',
+                        step: function () {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function () {
+                            $this.text(this.countNum);
+                            //alert('finished');
+                        }
+
+                    });
+            });
+            a = 1;
+        }
+
+    });
+
+</script>
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -2258,7 +2131,7 @@
             event.preventDefault();
             let name = document.querySelector('#name')
             let email = document.querySelector('#email')
-            let phone = document.querySelector('#number')
+            let phone = document.querySelector('#mobile')
             let typeofusage = document.querySelector('#type-of-usage')
             let product = document.querySelector('#product')
             let address = document.querySelector('#address')
@@ -2274,6 +2147,15 @@
             formdata.append("zipcode", zipcode.value)
             formdata.append("service", product.value)
             formdata.append('type', '3')
+            console.log("email", email.value);
+            console.log("name", name.value);
+            console.log("phone", phone.value);
+            console.log("message", "hello");
+            console.log("address", address.value)
+            console.log("proptype", typeofusage.value)
+            console.log("zipcode", zipcode.value)
+            console.log("service", product.value)
+            console.log('type', '3')
 
             var requestOptions = {
                 method: 'POST',
