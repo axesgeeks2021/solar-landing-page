@@ -498,7 +498,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px 20px;
+            padding: 20px 10px;
             margin: 40px 0;
             background-color: #7580A1;
             background: url(https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -596,41 +596,18 @@
             position: relative;
             object-fit: cover;
         }
-        @media(max-width: 575px) {
-            .brands__container {
-                gap: 20px;
-            }
-
-            .brand_image {
-                width: 45%;
-            }
-
-            .testimonial__box {
-                width: 90% !important;
-                margin: 0 100px;
-                align-self: center;
-            }
-            header div img{
-                width: 100%;
-                padding: 10px 0;
-            }
-
-        }
-        @media (max-width: 700px) {
-            .counter__container {
-                flex-direction: column;
-                gap: 14px;
-            }
-
-            .counter__box {
-                width: 90%;
-            }
-        }
+        
+        
 
         @media(max-width: 1000px) {
             #demo {
                 width: 100%;
                 margin-top: 15px;
+            }
+        }
+        @media (max-width: 900px) {
+            .form {
+                width: 45%;
             }
         }
 
@@ -659,9 +636,11 @@
             }
 
             .timeline__content {
-                width: 90%;
+                width: 100%;
             }
-
+            .timeline__step p{
+                font-size: 1.1rem;
+            }
             .counter__box {
                 width: calc(100% / 4 - 0.3%);
             }
@@ -675,12 +654,18 @@
             }
 
         }
+        @media (max-width: 700px) {
+            .counter__container {
+                flex-direction: column;
+                gap: 14px;
+            }
 
-        @media (max-width: 900px) {
-            .form {
-                width: 45%;
+            .counter__box {
+                width: 90%;
             }
         }
+
+        
 
         @media (max-width: 600px) {
             .form {
@@ -697,10 +682,32 @@
             .banner__text {
                 width: 90%;
             }
+            .banner__text h1{
+                text-align: center;
+            }
 
         }
 
+        @media(max-width: 575px) {
+            .brands__container {
+                gap: 20px;
+            }
 
+            .brand_image {
+                width: 45%;
+            }
+
+            .testimonial__box {
+                width: 90% !important;
+                margin: 0 100px;
+                align-self: center;
+            }
+            header div img{
+                width: 100%;
+                padding: 10px 0;
+            }
+
+        }
 
 
     </style>
@@ -752,7 +759,7 @@
             </form>
         </div>
         <div class="banner__text">
-            <h1 style="color: #fff;"><span style="color: #f76a0e">5000+</span> Homes in Australia Use
+            <h1 style="color: #fff;font-weight: 600;"><span style="color: #f76a0e">5000+</span> Homes in Australia Use
                 6.6KW Solar System, What About You?
             </h1>
         </div>
