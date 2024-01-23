@@ -386,7 +386,8 @@
             align-items: center;
             padding: 8px 15px;
         }
-        section.SwiperSliderHere{
+
+        section.SwiperSliderHere {
             padding: 0;
         }
 
@@ -577,27 +578,32 @@
             align-items: center;
         }
 
-        
-        header{
+
+        header {
             width: 100%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             padding: 4px 40px;
         }
-        header div{
+
+        header div {
             width: 30%;
             display: flex;
             justify-content: flex-start;
             align-items: center;
         }
-        header div img{
+
+        header div img {
             width: 40%;
             position: relative;
             object-fit: cover;
         }
-        
-        
+        .mobile__timeline{
+                display: none;
+            }
+
+
 
         @media(max-width: 1000px) {
             #demo {
@@ -605,6 +611,7 @@
                 margin-top: 15px;
             }
         }
+
         @media (max-width: 900px) {
             .form {
                 width: 45%;
@@ -620,10 +627,27 @@
             .footprint {
                 width: 80%;
             }
-            header div img{
+
+            header div img {
                 width: 100%;
                 padding: 10px 0;
             }
+            .timeline{
+                display: none;
+            }
+            .mobile__timeline{
+                display: block;
+            }
+            .mobile__timeline__splide{
+                height: fit-content;
+                margin: auto;
+            }
+            .first__slide, .third__slide{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             .timeline__step {
                 width: 100%;
                 display: flex;
@@ -638,9 +662,11 @@
             .timeline__content {
                 width: 100%;
             }
-            .timeline__step p{
+
+            .timeline__step p {
                 font-size: 1.1rem;
             }
+
             .counter__box {
                 width: calc(100% / 4 - 0.3%);
             }
@@ -654,6 +680,7 @@
             }
 
         }
+
         @media (max-width: 700px) {
             .counter__container {
                 flex-direction: column;
@@ -665,7 +692,7 @@
             }
         }
 
-        
+
 
         @media (max-width: 600px) {
             .form {
@@ -682,12 +709,14 @@
             .banner__text {
                 width: 90%;
             }
-            .banner__text h1{
+
+            .banner__text h1 {
                 text-align: center;
             }
 
         }
 
+        
         @media(max-width: 575px) {
             .brands__container {
                 gap: 20px;
@@ -702,14 +731,18 @@
                 margin: 0 100px;
                 align-self: center;
             }
-            header div img{
+
+            header div img {
                 width: 100%;
                 padding: 10px 0;
             }
 
         }
-
-
+        @media(max-width: 398px) {
+            .second__list__content{
+                top: 0
+            }
+        }
     </style>
     <script defer>
         window.addEventListener('load', () => {
@@ -730,7 +763,7 @@
 <body>
     <header>
         <div>
-            <img src="./assets/logo.webp" alt="website logo" class="logo"/>
+            <img src="./assets/logo.webp" alt="website logo" class="logo" />
         </div>
     </header>
     <section class="banner__form">
@@ -766,7 +799,7 @@
     </section>
 
     <!-- Benefits -->
-    <section class="SwiperSliderHere">
+    <section class="SwiperSliderHere mt-5">
         <div class="container">
             <div class="MainTItle">
                 <h4 style="color: #f76a0e;">Powerful Benefits of 6.6kW Solar Systems</h4>
@@ -863,12 +896,11 @@
         </div>
     </section>
 
-    
+
     <!-- steps -->
     <section class="timeline">
         <div class="heading">
-            <p style="font-size: 2rem;color: #f76a0e;font-weight: 500; text-align: center;"
-                class="p-3">How We Make It
+            <p style="font-size: 2rem;color: #f76a0e;font-weight: 500; text-align: center;" class="p-3">How We Make It
                 Happen: <br />Stress - Free 6.6Kw Solar Panel Installation</p>
         </div>
         <div class="timeline__box">
@@ -934,14 +966,108 @@
             </div>
         </div>
     </section>
-    
+    <section class="mobile__timeline" >
+        <section class="splide mobile__timeline__splide" aria-labelledby="carousel-heading">
+            <p style="font-size: 1.3rem;color: #f76a0e;font-weight: 500; text-align: center;" class="carousel-heading">How We Make It
+                Happen: <br />Stress - Free 6.6Kw Solar Panel Installation</p>
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide first__slide">
+                        <div class="timeline__box">
+                            <div class="timeline__step">
+                                <p>Step 1: Understanding Your Needs</p>
+                            </div>
+                            <div class="timeline__content">
+                                <p>We start by listening to your priority. Our team comprehensively understands your
+                                    requirements to
+                                    create tailored solar plans that fit your lifestyle and home perfectly. Through
+                                    personalized
+                                    consultations, we delve deeper into your Energy goals, Financial considerations, and
+                                    Sustainability aspirations. This ensures a holistic understanding that forms the
+                                    foundation for
+                                    a truly customized solar solution in Australia.
+
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide" style="align-self: center;">
+                        <div class="timeline__box">
+                            <div class="timeline__step">
+                                <p>Step 2: Installation</p>
+                            </div>
+                            <div class="timeline__content second__list__content" style="padding: 0 8px;">
+                                <p style="font-size: 1rem;">Our seasoned team ensures a smooth and hassle-free solar
+                                    installation
+                                    experience. Here's our
+                                    meticulous 4-step process:
+                                </p>
+                                <ul style="padding: 0;">
+                                    <li ><span style="color: #f76a0e;font-weight: 600;">Inspection -</span> A thorough
+                                        site
+                                        inspection is conducted to determine the ideal location for
+                                        solar panels. This step maximizes solar energy utilization while prioritizing
+                                        safety.
+                                    </li>
+                                    <li ><span style="color: #f76a0e;font-weight: 600;">Prefixing Solar Panels -</span>
+                                        Prior to
+                                        installing PV Solar Panels, we expertly install robust
+                                        brackets and racking within your space, setting the foundation for a secure and
+                                        efficient
+                                        solar setup.
+                                    </li>
+                                    <li ><span style="color: #f76a0e;font-weight: 600;">Mounting Panels -</span> With
+                                        precision, we
+                                        securely clamp the solar panels to the racking,
+                                        utilizing extruded aluminum clamps. The panels are seamlessly connected to the
+                                        DC isolator
+                                        via carefully managed cables.
+                                    </li>
+                                    <li ><span style="color: #f76a0e;font-weight: 600;">Connection -</span> In the final
+                                        step, we
+                                        establish crucial connections, linking solar panels to
+                                        both the inverter and the grid. This ensures a direct channel for free energy
+                                        from the sun
+                                        to power your home efficiently.
+                                    </li>
+                                </ul>
+                                <p>Always expect a smooth transition to solar energy, where every detail is handled with
+                                    expertise
+                                    and precision.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide third__slide">
+                        <div class="timeline__box">
+                            <div class="timeline__step">
+                                <p>Step 3: Continuous Support</p>
+                            </div>
+                            <div class="timeline__content">
+                                <p>Our commitment extends beyond installation. Anticipate ongoing maintenance and
+                                    dedicated support,
+                                    ensuring your solar system consistently operates at its best with enduring
+                                    efficiency and
+                                    unwavering performance. At Solar 365, we're here for you every step of the way,
+                                    providing
+                                    proactive monitoring and prompt resolution of any potential issues to guarantee a
+                                    seamless and
+                                    worry-free solar experience for years to come.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
     <!-- Trust -->
-    <section class="NetSuiteImplementationThree" id="NetSuiteImplementationThree">
+    <!-- <section class="NetSuiteImplementationThree" id="NetSuiteImplementationThree">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7">
                     <div class="NetSuiteContentHere">
-                        <!-- <span style="color: #ffff57;">CMMI Level 3 Company</span> -->
                         <h2 style="color: #f76a0e;">Can You Trust Us?</h2>
                         <p>At Solar 365, our commitment to your satisfaction extends beyond promises—we deliver
                             excellence at every step.</p>
@@ -973,9 +1099,9 @@
 
             </div>
         </div>
-    </section>
+    </section> -->
 
-    
+
     <!-- Testimonial -->
 
     <div class="container__wrapper">
@@ -2022,47 +2148,50 @@
     <script src="https://www.cinntra.com/add/SAP/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    var a = 0;
-    $(window).scroll(function () {
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        var a = 0;
+        $(window).scroll(function () {
 
-        var oTop = $('#counter').offset().top - window.innerHeight;
-        if (a == 0 && $(window).scrollTop() > oTop) {
-            $('.counter-value').each(function () {
-                var $this = $(this),
-                    countTo = $this.attr('data-count');
-                $({
-                    countNum: $this.text()
-                }).animate({
-                    countNum: countTo
-                },
+            var oTop = $('#counter').offset().top - window.innerHeight;
+            if (a == 0 && $(window).scrollTop() > oTop) {
+                $('.counter-value').each(function () {
+                    var $this = $(this),
+                        countTo = $this.attr('data-count');
+                    $({
+                        countNum: $this.text()
+                    }).animate({
+                        countNum: countTo
+                    },
 
-                    {
+                        {
 
-                        duration: 2000,
-                        easing: 'swing',
-                        step: function () {
-                            $this.text(Math.floor(this.countNum));
-                        },
-                        complete: function () {
-                            $this.text(this.countNum);
-                            //alert('finished');
-                        }
+                            duration: 2000,
+                            easing: 'swing',
+                            step: function () {
+                                $this.text(Math.floor(this.countNum));
+                            },
+                            complete: function () {
+                                $this.text(this.countNum);
+                                //alert('finished');
+                            }
 
-                    });
-            });
-            a = 1;
-        }
+                        });
+                });
+                a = 1;
+            }
 
-    });
+        });
 
-</script>
+    </script>
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide');
+            var splide = new Splide('.splide', {
+                type: 'loop',
+                autoplay: true
+            });
             splide.mount();
         });
         const progressCircle = document.querySelector(".autoplay-progress svg");
